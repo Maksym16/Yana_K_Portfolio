@@ -1,0 +1,10 @@
+@mixin background($url) {
+  background: $url;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center;
+}
+
+@mixin background-color($color) {
+  background: $color;
+}
