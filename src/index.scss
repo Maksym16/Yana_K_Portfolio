@@ -458,11 +458,21 @@ button, a, a.btn,
         justify-content: center;
 
         .cover-img {
-          height: 30rem;
+          max-height: 30rem;
           margin: 5rem 0;
 
           &--sm {
             height: 18rem;
+          }
+
+          &--lg {
+            height: 33rem;
+            padding: .3rem;
+          }
+
+          &--xlg {
+            height: 50rem;
+            padding: .3rem;
           }
           // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }

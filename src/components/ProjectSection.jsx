@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import finDo from '../img/Fin/1.png';
 import portland from '../img/Portland/Home page D.png';
 import evelina from '../img/Evelina/home-page.png';
+import glowYoga from '../img/Glow_yoga/hero.png';
 
 
 const projects = [
@@ -17,14 +18,14 @@ const projects = [
     btnText: 'View project'
   },
   {
-    projectId: '--portland',
-    name: 'Portland Electric',
-    description: 'Responsive website design for a better\n user experience across devices.\n UX, UI design, Research, Wireframing,\n Branding, Usability testing, Prototyping\nClient - Portland Electric,OR\n',
-    link: 'work/portland-electric',
+    projectId: '--glow-yoga',
+    name: 'Glow Yoga',
+    description: `Updating structure and website design\nfor yoga studio\n\nUX, UI design, Research,\nWireframing, Branding\n\nClient - Glow yoga, Brooklyn,NY`,
+    link: 'work/glow-yoga',
     animationLeft: 'fadeInLeft',
     animationRight: 'fadeInRight',
-    imgUrl: portland,
-    btnText: 'Case Study'
+    imgUrl: glowYoga,
+    btnText: 'View project'
   },
   {
     projectId: '--evelina',
@@ -36,11 +37,21 @@ const projects = [
     imgUrl: evelina,
     btnText: 'View project'
   },
+  {
+    projectId: '--portland',
+    name: 'Portland Electric',
+    description: 'Responsive website design for a better\n user experience across devices.\n UX, UI design, Research, Wireframing,\n Branding, Usability testing, Prototyping\nClient - Portland Electric,OR\n',
+    link: 'work/portland-electric',
+    animationLeft: 'fadeInLeft',
+    animationRight: 'fadeInRight',
+    imgUrl: portland,
+    btnText: 'Case Study'
+  }
 ];
 
 const renderProjects = () => {
-  return projects.map((p) => (
-    <div className={`jumbotron jumbotron${p.projectId} m-0 py-5`}>
+  return projects.map((p, idx) => (
+    <div key={idx} className={`jumbotron jumbotron${p.projectId} m-0 py-5`}>
       <div className="container">
         <div className="row text-center px-lg-4 px-xl-5">
           <div
@@ -80,7 +91,7 @@ const renderProjects = () => {
 
 const ProjectSection = () => {
   return (
-    <div id="features" class="offset">
+    <div id="features" className="offset">
       {renderProjects()}
     </div>
   );

@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
+  const [color, setColor] = useState(false)
+
+  const changeColor = () => {
+    if (window.scrollY >= 300) { //if window is scrolled 300px or more
+      setColor(true) //add class 'solid' to element with class 'navbar'
+    } else { //if page is not scrolled 300px from top
+      setColor(false) //remove class 'solid' from navbar element
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav className={`${color ? 'navbar solid' : 'navbar'} navbar-expand-lg fixed-top`}>
       <div className="container-fluid">
       <Link className="logo" to="/">YANA KOTLIAR</Link>
         <button
@@ -22,7 +34,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link to="/work" className="nav-link active">
+              <Link to="/" className="nav-link active">
                 Work
               </Link>
             </li>

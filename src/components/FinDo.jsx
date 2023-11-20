@@ -1,4 +1,16 @@
 import React from 'react';
+import finDo1 from '../img/Fin/1.png';
+import finDo2 from '../img/Fin/2.png';
+import finDo3 from '../img/Fin/3.png';
+import finDo4 from '../img/Fin/4.png';
+import finDo5 from '../img/Fin/5.png';
+import finDo6 from '../img/Fin/6.png';
+import finDo7 from '../img/Fin/7.png';
+import finDo8 from '../img/Fin/8.png';
+import finDo9 from '../img/Fin/9.png';
+import finDo10 from '../img/Fin/10.png';
+import finDo11 from '../img/Fin/11.png';
+
 
 const FinDo = () => {
   return (
@@ -14,7 +26,7 @@ const FinDo = () => {
                 <div className="feature px-2">
                   <img
                     className="cover-img cover-img--lg"
-                    src="../img/Fin/landing_pic.png"
+                    src={finDo1}
                     alt=""
                   />
                 </div>
@@ -140,7 +152,7 @@ const FinDo = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <img className="cover-img" src="./img/Fin/asset _1.png" alt="" />
+                  <img className="cover-img" src={finDo1} alt="" />
                   <p>
                     To avoid frustration and increase retention, the flow was
                     separated for new users (Create account) and existing users
@@ -156,7 +168,7 @@ const FinDo = () => {
                     New flow - The process was divided for new users (Create
                     account) and returning users (Sign in).
                   </p>
-                  <img className="cover-img" src="./img/Fin/asset_2.png" alt="" />
+                  <img className="cover-img" src={finDo2} alt="" />
                 </div>
               </div>
 
@@ -193,29 +205,29 @@ const FinDo = () => {
                   <div className="container__box__inner container__box__inner--3">
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/1"
+                      src={finDo1}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/2"
+                      src={finDo2}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/3"
+                      src={finDo3}
                       alt=""
                     />
                   </div>
                   <div className="container__box__inner container__box__inner--2">
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/4"
+                      src={finDo4}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/5"
+                      src={finDo5}
                       alt=""
                     />
                   </div>
@@ -236,34 +248,34 @@ const FinDo = () => {
                   <div className="container__box__inner container__box__inner--3">
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/6"
+                      src={finDo6}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/7"
+                      src={finDo7}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/8"
+                      src={finDo8}
                       alt=""
                     />
                   </div>
                   <div className="container__box__inner container__box__inner--3">
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/9"
+                      src={finDo9}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/10"
+                      src={finDo10}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--xlg"
-                      src="./img/Fin/11"
+                      src={finDo11}
                       alt=""
                     />
                   </div>

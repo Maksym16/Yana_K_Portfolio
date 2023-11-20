@@ -12,23 +12,23 @@ import imageHNew from '../img/Evelina/image-h-new.png';
 const Evelina = () => {
   return (
     <>
-      <div id="features" class="offset evelina">
-        <div class="jumbotron jumbotron--evelina m-0 py-5">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
+      <div id="features" className="offset evelina">
+        <div className="jumbotron jumbotron--evelina m-0 py-5">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
               <div
-                class="container__box col-sm-6 col-md-6 os-animation"
+                className="container__box col-sm-6 col-md-6 os-animation"
                 data-animation="fadeInLeft"
               >
-                <div class="feature px-2">
-                  <div class="heading heading--evelina">
-                    <h3 class="heading__text">Evelina</h3>
-                    <div class="lead">Concept for Evelina Website</div>
+                <div className="feature px-2">
+                  <div className="heading heading--evelina">
+                    <h3 className="heading__text">Evelina</h3>
+                    <div className="lead">Concept for Evelina Website</div>
 
                     <a
                       href="https://www.figma.com/proto/gTPUJUH3jlA2Kv452yHONC/Project?page-id=54%3A378&node-id=66%3A269&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=84%3A708&hide-ui=1&fbclid=IwAR3D8qf22Wk0XiUKXcv0NTwBB0FR1MJeB39IGW9JguvotOVPPFBpotNDMKc"
                       type="button"
-                      class="cta"
+                      className="cta"
                       target="_blank"
                       data-aos="fade-in"
                       rel="noreferrer"
@@ -40,22 +40,22 @@ const Evelina = () => {
               </div>
 
               <div
-                class="container__box col-sm-6 col-md-6 os-animation"
+                className="container__box col-sm-6 col-md-6 os-animation"
                 data-animation="fadeInRight"
               >
-                <img class="cover-img" src={evelinaHome} alt="" />
+                <img className="cover-img" src={evelinaHome} alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="container__box__inner container__box__inner__left">
-                  <p class="heavy">Task</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="container__box__inner container__box__inner__left">
+                  <p className="heavy">Task</p>
                 </div>
-                <div class="container__box__inner container__box__inner__right">
+                <div className="container__box__inner container__box__inner__right">
                   <p>
                     Update restaurant website design, using style guide and
                     assets that were given by the client. Improve site usability
@@ -67,30 +67,30 @@ const Evelina = () => {
           </div>
         </div>
 
-        <div class="jumbotron jumbotron--dark m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="container__box__inner container__box__inner__left">
-                  <div class="column-container">
-                    <p class="heavy">Duration</p>
+        <div className="jumbotron jumbotron--dark m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="container__box__inner container__box__inner__left">
+                  <div className="column-container">
+                    <p className="heavy">Duration</p>
                     <p>3 days</p>
                   </div>
-                  <div class="column-container">
-                    <p class="heavy">Tools</p>
+                  <div className="column-container">
+                    <p className="heavy">Tools</p>
                     <p>Figma</p>
                   </div>
                 </div>
-                <div class="container__box__inner container__box__inner__right">
-                  <div class="column-container">
-                    <p class="heavy">My Role</p>
+                <div className="container__box__inner container__box__inner__right">
+                  <div className="column-container">
+                    <p className="heavy">My Role</p>
                     <p>
                       Created interface design, interaction design, branding and
                       prototype evaluation. Ran the accessibility tests.
                     </p>
                   </div>
-                  <div class="column-container">
-                    <p class="heavy">Main Navigation Requirements</p>
+                  <div className="column-container">
+                    <p className="heavy">Main Navigation Requirements</p>
                     <p>
                       - Menu
                       <br />
@@ -107,12 +107,12 @@ const Evelina = () => {
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">Story</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">Story</p>
 
                   <p>
                     Evelina is an upscale bistro in the heart of Brooklyn’s
@@ -129,68 +129,68 @@ const Evelina = () => {
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">Design System</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">Design System</p>
 
-                  <img class="cover-img" src={designSystem} alt="" />
+                  <img className="cover-img" src={designSystem} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">Home Page Design</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">Home Page Design</p>
 
-                  <img class="cover-img" src={home} alt="" />
+                  <img className="cover-img" src={home} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">Reservation Page Design</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">Reservation Page Design</p>
 
-                  <img class="cover-img" src={reservation} alt="" />
+                  <img className="cover-img" src={reservation} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">Menu Page Design</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">Menu Page Design</p>
 
-                  <img class="cover-img" src={menuDinner} alt="" />
+                  <img className="cover-img" src={menuDinner} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="jumbotron m-0 py-1">
-          <div class="container">
-            <div class="row text-center px-lg-4 px-xl-5">
-              <div class="container__box__inner">
-                <div class="column-container">
-                  <p class="title title--evelina">ACCESSIBILITY IMPROVEMENTS</p>
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--evelina">ACCESSIBILITY IMPROVEMENTS</p>
 
                   <p>
                     Some of the website pages needed accessibility improvement -
@@ -202,40 +202,40 @@ const Evelina = () => {
                     requirements.
                   </p>
 
-                  <div class="column-container container-margin-3">
-                    <p class="heavy">Before</p>
+                  <div className="column-container container-margin-3">
+                    <p className="heavy">Before</p>
                     <img
-                      class="cover-img container-margin-1"
+                      className="cover-img container-margin-1"
                       src={imageMenu}
                       alt=""
                     />
-                    <p class="heavy">After</p>
+                    <p className="heavy">After</p>
                     <img
-                      class="cover-img container-margin-1"
+                      className="cover-img container-margin-1"
                       src={imageMenuNew}
                       alt=""
                     />
                   </div>
 
-                  <div class="column-container container-margin-3">
-                    <p class="heavy">Before</p>
+                  <div className="column-container container-margin-3">
+                    <p className="heavy">Before</p>
                     <img
-                      class="cover-img container-margin-1"
+                      className="cover-img container-margin-1"
                       src={imageH}
                       alt=""
                     />
-                    <p class="heavy">After</p>
+                    <p className="heavy">After</p>
                     <img
-                      class="cover-img container-margin-1"
+                      className="cover-img container-margin-1"
                       src={imageHNew}
                       alt=""
                     />
                   </div>
-                  <div class="text-center">
+                  <div className="text-center">
                     <a
                       href="https://www.figma.com/proto/gTPUJUH3jlA2Kv452yHONC/Project?page-id=54%3A378&node-id=66%3A269&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=84%3A708&hide-ui=1&fbclid=IwAR3D8qf22Wk0XiUKXcv0NTwBB0FR1MJeB39IGW9JguvotOVPPFBpotNDMKc"
                       type="button"
-                      class="cta"
+                      className="cta"
                       target="_blank"
                       data-aos="fade-in"
                       rel="noreferrer"
@@ -244,21 +244,21 @@ const Evelina = () => {
                     </a>
                   </div>
 
-                  <div class="text-center projects-nav">
-                    <div class="projects-nav__prev">
+                  <div className="text-center projects-nav">
+                    <div className="projects-nav__prev">
                       <a href="glow_yoga.html" rel="prev">
-                        <span class="n-desc" data-delay="0">
+                        <span className="n-desc" data-delay="0">
                           Previous
                         </span>
-                        <span class="n-title">Glow Yoga</span>
+                        <span className="n-title">Glow Yoga</span>
                       </a>
                     </div>
-                    <div class="projects-nav__next">
+                    <div className="projects-nav__next">
                       <a href="cook_it.html" rel="next">
-                        <span class="n-desc" data-delay="0">
+                        <span className="n-desc" data-delay="0">
                           Next
                         </span>
-                        <span class="n-title">Cook It</span>
+                        <span className="n-title">Cook It</span>
                       </a>
                     </div>
                   </div>

@@ -6,6 +6,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import FinDo from './components/FinDo';
 import PortlandElectric from './components/PortlandElectric';
 import Evelina from './components/Evelina';
+import GlowYoga from './components/GlowYoga';
 
 function Layout() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="work" element={<Work />}>
             <Route path="fin-do" element={<FinDo />} />
+            <Route path="glow-yoga" element={<GlowYoga />} />
             <Route path="evelina" element={<Evelina />} />
             <Route path="portland-electric" element={<PortlandElectric />} />
           </Route>
