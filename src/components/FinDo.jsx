@@ -10,7 +10,7 @@ import finDo8 from '../img/Fin/8.png';
 import finDo9 from '../img/Fin/9.png';
 import finDo10 from '../img/Fin/10.png';
 import finDo11 from '../img/Fin/11.png';
-
+import Reveal from './Reveal';
 
 const FinDo = () => {
   return (
@@ -19,44 +19,42 @@ const FinDo = () => {
         <div className="jumbotron jumbotron--fin-do m-0 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInLeft"
-              >
-                <div className="feature px-2">
-                  <img
-                    className="cover-img cover-img--lg"
-                    src={finDo1}
-                    alt=""
-                  />
-                </div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'leftToRight'}>
+                  <div className="feature px-2">
+                    <img
+                      className="cover-img cover-img--lg"
+                      src={finDo1}
+                      alt=""
+                    />
+                  </div>
+                </Reveal>
               </div>
 
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInRight"
-              >
-                <div className="heading heading--cook-it">
-                  <h3 className="heading__text">FIN.do</h3>
-                  <div className="lead">
-                    Fin.do is a card-to-card money transfer
-                    <br />
-                    app enabling you to send money instantly
-                    <br />
-                    to more than 50 countries.
-                  </div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'rightToLeft'}>
+                  <div className="heading heading--cook-it">
+                    <h3 className="heading__text">FIN.do</h3>
+                    <div className="lead">
+                      Fin.do is a card-to-card money transfer
+                      <br />
+                      app enabling you to send money instantly
+                      <br />
+                      to more than 50 countries.
+                    </div>
 
-                  <a
-                    href="https://www.figma.com/proto/pEhArGIM6tCcemhsD8MYY6/CAPSTONE?page-id=112%3A4299&node-id=170%3A8105&viewport=281%2C48%2C0.55&scaling=scale-down&starting-point-node-id=170%3A8105&fbclid=IwAR11ZIqqVNnWw6Z6ldAFLUHpMkEheNvnbVRjtsiF0uYHAX6lwf8WNOIVKjE"
-                    type="button"
-                    className="cta"
-                    target="_blank"
-                    data-aos="fade-in"
-                    rel="noreferrer"
-                  >
-                    Fin.do
-                  </a>
-                </div>
+                    <a
+                      href="https://www.figma.com/proto/pEhArGIM6tCcemhsD8MYY6/CAPSTONE?page-id=112%3A4299&node-id=170%3A8105&viewport=281%2C48%2C0.55&scaling=scale-down&starting-point-node-id=170%3A8105&fbclid=IwAR11ZIqqVNnWw6Z6ldAFLUHpMkEheNvnbVRjtsiF0uYHAX6lwf8WNOIVKjE"
+                      type="button"
+                      className="cta"
+                      target="_blank"
+                      data-aos="fade-in"
+                      rel="noreferrer"
+                    >
+                      Fin.do
+                    </a>
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>

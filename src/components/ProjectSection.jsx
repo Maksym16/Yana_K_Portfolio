@@ -4,6 +4,7 @@ import finDo from '../img/Fin/1.png';
 import portland from '../img/Portland/Home page D.png';
 import evelina from '../img/Evelina/home-page.png';
 import glowYoga from '../img/Glow_yoga/hero.png';
+import Reveal from './Reveal';
 
 
 const projects = [
@@ -12,82 +13,103 @@ const projects = [
     name: 'FIN.do',
     description: `Fin.do is a card-to-card money transfer\napp enabling you to send money instantly\nto more than 50 countries.`,
     link: 'work/fin-do',
-    animationLeft: 'fadeInLeft',
-    animationRight: 'fadeInRight',
+    aligmentPosition: 'right',
     imgUrl: finDo,
-    btnText: 'View project'
+    btnText: 'View project',
+  },
+  {
+    projectId: '--snov',
+    name: 'SNOV.io',
+    description:
+      'Snovio is a B2B platform that helps to find leads, automate\n\n cold mailings, sell better, and manage deals.',
+    link: 'work/snov',
+    aligmentPosition: 'left',
+    imgUrl: glowYoga,
+    btnText: 'View project',
   },
   {
     projectId: '--glow-yoga',
     name: 'Glow Yoga',
     description: `Updating structure and website design\nfor yoga studio\n\nUX, UI design, Research,\nWireframing, Branding\n\nClient - Glow yoga, Brooklyn,NY`,
     link: 'work/glow-yoga',
-    animationLeft: 'fadeInLeft',
-    animationRight: 'fadeInRight',
+    aligmentPosition: 'right',
     imgUrl: glowYoga,
-    btnText: 'View project'
+    btnText: 'View project',
   },
   {
     projectId: '--evelina',
     name: 'Evelina  ',
     description: `Branding for the restaurant website\nUI design, Wireframing,\n Branding, Accessibility testing\nClient - Evelina Bk, NY`,
     link: 'work/evelina',
-    animationLeft: 'fadeInLeft',
-    animationRight: 'fadeInRight',
+    aligmentPosition: 'left',
     imgUrl: evelina,
-    btnText: 'View project'
+    btnText: 'View project',
   },
   {
     projectId: '--portland',
     name: 'Portland Electric',
-    description: 'Responsive website design for a better\n user experience across devices.\n UX, UI design, Research, Wireframing,\n Branding, Usability testing, Prototyping\nClient - Portland Electric,OR\n',
+    description:
+      'Responsive website design for a better\n user experience across devices.\n UX, UI design, Research, Wireframing,\n Branding, Usability testing, Prototyping\nClient - Portland Electric,OR\n',
     link: 'work/portland-electric',
-    animationLeft: 'fadeInLeft',
-    animationRight: 'fadeInRight',
+    aligmentPosition: 'right',
     imgUrl: portland,
-    btnText: 'Case Study'
-  }
+    btnText: 'Case Study',
+  },
 ];
 
 const renderProjects = () => {
   return projects.map((p, idx) => (
     <div key={idx} className={`jumbotron jumbotron${p.projectId} m-0 py-5`}>
       <div className="container">
-        <div className="row text-center px-lg-4 px-xl-5">
-          <div
-            className="container__box col-sm-6 col-md-6 os-animation"
-            data-animation="fadeInLeft"
-          >
-            <div className="feature px-2">
-              <div className={`heading heading${p.projectId}`}>
-                <h3 className="heading__text">{p.name}</h3>
-                <div className="lead lead--end">
-                  {p.description}
-                </div>
+        <div
+          className={`row text-center px-lg-4 px-xl-5 ${
+            p.aligmentPosition !== 'right' && 'flex-row-reverse'
+          }`}
+        >
+          <div className="container__box col-sm-6 col-md-6">
+            <Reveal
+              animationType={
+                p.aligmentPosition === 'right' ? 'leftToRight' : 'rightToLeft'
+              }
+            >
+              <div className="feature px-2">
+                <div className={`heading heading${p.projectId}`}>
+                  <h3 className="heading__text">{p.name}</h3>
+                  <div
+                    className={`lead ${
+                      p.aligmentPosition === 'right' && 'lead--end'
+                    }`}
+                  >
+                    {p.description}
+                  </div>
 
-                <Link
-                  to={p.link}
-                  type="button"
-                  className="cta"
-                  data-aos="fade-in"
-                >
-                  {p.btnText}
-                </Link>
+                  <Link
+                    to={p.link}
+                    type="button"
+                    className="cta"
+                    data-aos="fade-in"
+                  >
+                    {p.btnText}
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
 
-          <div
-            className="container__box col-sm-6 col-md-6 os-animation"
-            data-animation="fadeInRight"
-          >
-            <img className="cover-img" src={p.imgUrl} alt="" />
+          <div className="container__box col-sm-6 col-md-6">
+            <Reveal
+              animationType={
+                p.aligmentPosition === 'right' ? 'rightToLeft' : 'leftToRight'
+              }
+            >
+              <img className="cover-img" src={p.imgUrl} alt="" />
+            </Reveal>
           </div>
         </div>
       </div>
     </div>
-  ))
-}
+  ));
+};
 
 const ProjectSection = () => {
   return (

@@ -8,12 +8,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 html {
   font-size: 13px;
-  font-family: 'Gilroy', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 2px;
 }
 
 a {
@@ -25,7 +29,7 @@ body {
   height: 100%;
   line-height: 1.4;
   background-color: $white;
-  font-family: 'Gilroy', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 h1,
@@ -115,7 +119,7 @@ img {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  
+
   &--center {
     justify-content: center;
   }
@@ -133,7 +137,12 @@ img {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
+  font-family: 'Libre Baskerville', serif !important;
+}
+
+.main {
+  font-size: 34px !important;
 }
 
 .cover-img {
@@ -141,17 +150,17 @@ img {
 
   &--sm {
     height: 18rem;
-    padding: .3rem;
+    padding: 0.3rem;
   }
 
   &--lg {
     height: 33rem;
-    padding: .3rem;
+    padding: 0.3rem;
   }
 
   &--xlg {
     height: 50rem;
-    padding: .3rem;
+    padding: 0.3rem;
   }
   // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -180,9 +189,10 @@ img {
   font-size: 24px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: 'Libre Baskerville', serif !important;
   &--evelina {
     color: $evelina_secondary;
   }
@@ -195,36 +205,43 @@ img {
   &--glow-yoga {
     color: $glow-yoga;
   }
+  &--fin-do {
+    color: $fin-do;
+  }
+  &--snov {
+    color: $snov;
+  }
 }
 
 p {
   text-align: start;
 }
 /*-- Prevent Horizontal Scrolling & Font Style --*/
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 /*--- Nav Scrolling Offset --*/
 .offset:before {
-  content: "";
+  content: '';
   height: 4rem;
   display: block;
   margin-top: -4rem;
 }
 
 /*--- Extra Bootstrap Column Padding --*/
-[class*="col-"] {
+[class*='col-'] {
   padding: 1rem;
 }
 
 /*============= NAVIGATION =============*/
 .navbar {
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-weight: 400;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.2rem;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
 
   &.solid {
     .logo {
@@ -234,23 +251,24 @@ html, body {
     .navbar-nav {
       .nav-link {
         color: $white;
-        padding-top: .8rem;
-        display:inline-block;
-  
-      
+        padding-top: 0.8rem;
+        display: inline-block;
+
         &:after {
-          display:block;
+          display: block;
           content: '';
-          border-bottom: solid 2px $white;  
-          transform: scaleX(0);  
+          border-bottom: solid 2px $white;
+          transform: scaleX(0);
           transition: transform 250ms ease-in-out;
         }
-      
-        &:hover:after { transform: scaleX(1); }
+
+        &:hover:after {
+          transform: scaleX(1);
+        }
       }
-  
+
       li {
-        padding-right: .8rem;
+        padding-right: 0.8rem;
       }
     }
 
@@ -267,23 +285,24 @@ html, body {
   .navbar-nav {
     .nav-link {
       color: $primary-color;
-      padding-top: .8rem;
-      display:inline-block;
+      padding-top: 0.8rem;
+      display: inline-block;
 
-   
       &:after {
-        display:block;
+        display: block;
         content: '';
-        border-bottom: solid 2px $primary-color;  
-        transform: scaleX(0);  
+        border-bottom: solid 2px $primary-color;
+        transform: scaleX(0);
         transition: transform 250ms ease-in-out;
       }
-    
-      &:hover:after { transform: scaleX(1); }
+
+      &:hover:after {
+        transform: scaleX(1);
+      }
     }
 
     li {
-      padding-right: .8rem;
+      padding-right: 0.8rem;
     }
   }
 }
@@ -295,7 +314,7 @@ html, body {
 
 .navbar.solid,
 .navbar.solid-toggle {
-  background: rgba(0, 0, 0, .7)!important;
+  background: rgba(0, 0, 0, 0.7) !important;
   transition: background-color 1s ease;
 
   .logo {
@@ -311,37 +330,42 @@ html, body {
   .navbar-nav {
     .nav-link {
       color: $white;
-      padding-top: .8rem;
-      display:inline-block;
+      padding-top: 0.8rem;
+      display: inline-block;
 
-   
       &:after {
-        display:block;
+        display: block;
         content: '';
-        border-bottom: solid 2px $white;  
-        transform: scaleX(0);  
+        border-bottom: solid 2px $white;
+        transform: scaleX(0);
         transition: transform 250ms ease-in-out;
       }
-    
-      &:hover:after { transform: scaleX(1); }
+
+      &:hover:after {
+        transform: scaleX(1);
+      }
     }
 
     li {
-      padding-right: .8rem;
+      padding-right: 0.8rem;
     }
   }
 }
 
 /*-- Remove Button Outline --*/
-button:focus, a:focus, a.btn:focus {
+button:focus,
+a:focus,
+a.btn:focus {
   outline: 0;
   -webkit-appearance: none;
   box-shadow: none;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
-button, a, a.btn,
+button,
+a,
+a.btn,
 .svg-inline--fa {
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 /*============= LANDING PAGE =============*/
@@ -384,7 +408,7 @@ button, a, a.btn,
 
   h1 {
     font-size: 3.5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     padding-bottom: 1rem;
     font-weight: 500;
     line-height: 140%;
@@ -394,7 +418,7 @@ button, a, a.btn,
 
   h2 {
     font-size: 2rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     padding-bottom: 1rem;
     font-weight: 200;
     line-height: 140%;
@@ -408,17 +432,15 @@ button, a, a.btn,
 
     a {
       color: $primary-color;
-      text-decoration: none;    
+      text-decoration: none;
       font-weight: 600;
-      
+
       &:hover {
-        opacity: .5;
-     
+        opacity: 0.5;
       }
     }
   }
 }
-
 
 /*-- Bouncing Down Arrow --*/
 .arrow {
@@ -431,10 +453,10 @@ button, a, a.btn,
 .down-arrow .svg-inline--fa {
   color: $primary-color;
   font-size: 2.2rem;
-  opacity: .3;
+  opacity: 0.3;
 }
 .down-arrow .svg-inline--fa:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /*============= FEATURES SECTION =============*/
@@ -442,9 +464,8 @@ button, a, a.btn,
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 2px;
-  font-style: normal;
-  font-weight: 100;
-  
+  font-weight: 300;
+
   .jumbotron {
     border-radius: 0;
     display: flex;
@@ -467,12 +488,12 @@ button, a, a.btn,
 
           &--lg {
             height: 33rem;
-            padding: .3rem;
+            padding: 0.3rem;
           }
 
           &--xlg {
             height: 50rem;
-            padding: .3rem;
+            padding: 0.3rem;
           }
           // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
@@ -485,13 +506,15 @@ button, a, a.btn,
             text-decoration: none;
           }
 
-          &--evelina,
-          &--portland {
+          &--portland,
+          &--glow-yoga,
+          &--fin-do {
             align-items: flex-end;
           }
 
+          &--evelina,
           &--cook-it,
-          &--glow-yoga {
+          &--snov {
             align-items: flex-start;
           }
         }
@@ -516,6 +539,12 @@ button, a, a.btn,
           &__left {
             width: 30%;
             margin-right: 2rem;
+          }
+
+          &__left-mid {
+            width: 50%;
+            margin-right: 2rem;
+            flex-direction: column;
           }
 
           &--half {
@@ -558,7 +587,7 @@ button, a, a.btn,
             height: 35rem;
             padding: 1rem;
             width: 100%;
-            
+
             &--tall {
               height: 90rem;
             }
@@ -566,7 +595,7 @@ button, a, a.btn,
             &--sm {
               height: 25rem;
             }
-          
+
             &--xsx {
               height: 8rem;
               width: 50%;
@@ -577,11 +606,11 @@ button, a, a.btn,
             height: 100rem;
             padding: 1rem;
             width: 100%;
-          
+
             &--sm {
               height: 70rem;
             }
-          
+
             &--xsx {
               height: 8rem;
               width: 50%;
@@ -592,7 +621,11 @@ button, a, a.btn,
     }
 
     &--dark {
-      @include background-color($dark_light)
+      @include background-color($dark_light);
+    }
+
+    &--snov-bg {
+      @include background-color($snov-bg);
     }
 
     &--glow-yoga {
@@ -619,10 +652,13 @@ button, a, a.btn,
       @include background($fin-do-image);
       overflow: hidden;
     }
-  }
- 
-}
 
+    &--snov {
+      @include background($snov-image);
+      overflow: hidden;
+    }
+  }
+}
 
 /*============= ABOUT SECTION =============*/
 #about {
@@ -659,10 +695,10 @@ button, a, a.btn,
           text-align: left;
         }
       }
-    } 
+    }
 
     &--dark {
-      @include background-color($dark_light)
+      @include background-color($dark_light);
     }
 
     .container__box__inner--4 {
@@ -679,7 +715,7 @@ button, a, a.btn,
     .caption__container__links {
       justify-content: center;
       margin: 2rem 0;
-      
+
       &__link {
         font-size: 18px;
         font-weight: 200;
@@ -690,26 +726,25 @@ button, a, a.btn,
         a {
           text-decoration: none;
           color: $primary-color;
-          padding-top: .8rem;
-          display:inline-block;
-    
-        
+          padding-top: 0.8rem;
+          display: inline-block;
+
           &:after {
-            display:block;
+            display: block;
             content: '';
-            border-bottom: solid 2px $primary-color;  
-            transform: scaleX(0);  
+            border-bottom: solid 2px $primary-color;
+            transform: scaleX(0);
             transition: transform 250ms ease-in-out;
           }
-        
-          &:hover:after { transform: scaleX(1); }
+
+          &:hover:after {
+            transform: scaleX(1);
+          }
         }
       }
     }
   }
 }
-
-
 
 /*============= TOP SCROLL =============*/
 
@@ -717,12 +752,12 @@ a.top-scroll {
   right: 1.2rem;
   bottom: 1.2rem;
   position: fixed;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1000;
   display: none;
 }
 a.top-scroll:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .top-scroll .svg-inline--fa {
   background: white;
@@ -776,7 +811,7 @@ a.top-scroll:hover {
       font-family: Merriweather, sans-serif;
       box-sizing: border-box;
       background-color: transparent;
-      transition: color .15s ease;
+      transition: color 0.15s ease;
       text-decoration: none;
       position: relative;
       display: block;
@@ -809,13 +844,11 @@ a.top-scroll:hover {
           width: 60%;
           background-color: $primary-color;
           transition: width 0.25s ease;
-          
-          
         }
 
         &:hover {
           &:after {
-          width: 100%;
+            width: 100%;
           }
         }
       }
@@ -839,7 +872,7 @@ a.top-scroll:hover {
         width: 100%;
         cursor: default;
         opacity: 0;
-        transition: transform  .25s ease, opacity .25s ease;
+        transition: transform 0.25s ease, opacity 0.25s ease;
         transition-delay: 0s;
         pointer-events: none;
         word-wrap: break-word;
@@ -881,7 +914,7 @@ a.top-scroll:hover {
       font-family: Merriweather, sans-serif;
       box-sizing: border-box;
       background-color: transparent;
-      transition: color .15s ease;
+      transition: color 0.15s ease;
       text-decoration: none;
       position: relative;
       display: block;
@@ -918,7 +951,7 @@ a.top-scroll:hover {
 
         &:hover {
           &:after {
-          width: 100%;
+            width: 100%;
           }
         }
       }
@@ -942,7 +975,7 @@ a.top-scroll:hover {
         width: 100%;
         cursor: default;
         opacity: 0;
-        transition: transform  .25s ease, opacity .25s ease;
+        transition: transform 0.25s ease, opacity 0.25s ease;
         transition-delay: 0s;
         pointer-events: none;
         word-wrap: break-word;
@@ -982,7 +1015,7 @@ a.top-scroll:hover {
 
               &--xlg {
                 height: 45rem;
-                padding: .3rem;
+                padding: 0.3rem;
               }
             }
           }
@@ -1002,25 +1035,25 @@ a.top-scroll:hover {
     max-width: 100%;
     display: flex;
     justify-content: center;
-  
+
     &__container {
       width: 80vw;
       padding-right: 10%;
-  
+
       &__links {
         display: flex;
         align-items: center;
       }
     }
-  
+
     h1 {
       font-size: 3rem;
-      letter-spacing: .2rem;
-      padding-bottom: .8rem;
+      letter-spacing: 0.2rem;
+      padding-bottom: 0.8rem;
       line-height: 100%;
       margin-bottom: 1rem;
     }
-  
+
     h3 {
       font-size: 2.2rem;
       padding-bottom: 1.7rem;
@@ -1038,25 +1071,25 @@ a.top-scroll:hover {
     max-width: 100%;
     display: flex;
     justify-content: center;
-  
+
     &__container {
       width: 80vw;
-  
+
       &__links {
         display: flex;
         align-items: center;
       }
     }
-  
+
     h1 {
       margin-top: 0;
       font-size: 2.7rem;
-      letter-spacing: .15rem;
-      padding-bottom: .5rem;
+      letter-spacing: 0.15rem;
+      padding-bottom: 0.5rem;
       line-height: 100%;
       margin-bottom: 1rem;
     }
-  
+
     h3 {
       font-size: 1.7rem;
       padding-bottom: 1.2rem;
@@ -1074,21 +1107,21 @@ a.top-scroll:hover {
     max-width: 100%;
     display: flex;
     justify-content: center;
-  
+
     &__container {
       width: 80vw;
-  
+
       &__links {
         display: flex;
         align-items: center;
       }
     }
-  
+
     h1 {
       // margin-top: 10rem;
       font-size: 1.9rem;
-      letter-spacing: .1rem;
-      padding-bottom: .4rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
       line-height: 100%;
       margin-bottom: 1rem;
     }
@@ -1096,12 +1129,12 @@ a.top-scroll:hover {
     h2 {
       // margin-top: 10rem;
       font-size: 1.5rem;
-      letter-spacing: .1rem;
-      padding-bottom: .4rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
       line-height: 100%;
       margin-bottom: 1rem;
     }
-  
+
     h3 {
       font-size: 1.2rem;
       padding-bottom: 1rem;
@@ -1123,7 +1156,7 @@ a.top-scroll:hover {
             display: flex;
             flex-direction: column;
             align-items: center;
-  
+
             a {
               text-decoration: none;
             }
@@ -1133,6 +1166,11 @@ a.top-scroll:hover {
             padding: 1rem;
             display: flex;
             flex-direction: column;
+
+            .container__box__inner__left {
+              min-width: 100%;
+              margin-right: 0;
+            }
 
             &--half {
               .container__box__inner__left {
@@ -1149,11 +1187,11 @@ a.top-scroll:hover {
               height: 20rem;
               padding: 1rem;
               width: 100%;
-            
+
               &--sm {
                 height: 25rem;
               }
-            
+
               &--xsx {
                 height: 8rem;
                 width: 50%;
@@ -1162,10 +1200,10 @@ a.top-scroll:hover {
 
             .cover-img {
               margin: 1rem 0;
-            
+
               &--sm {
                 height: 18rem;
-                padding: .3rem;
+                padding: 0.3rem;
               }
 
               &--lg {
@@ -1174,7 +1212,7 @@ a.top-scroll:hover {
 
               &--xlg {
                 height: 45rem;
-                padding: .3rem;
+                padding: 0.3rem;
               }
               // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             }
@@ -1231,10 +1269,10 @@ a.top-scroll:hover {
             text-align: left;
           }
         }
-      } 
+      }
 
       &--dark {
-        @include background-color($dark_light)
+        @include background-color($dark_light);
       }
 
       .container__box__inner--4 {
@@ -1251,7 +1289,7 @@ a.top-scroll:hover {
       .caption__container__links {
         justify-content: center;
         margin: 2rem 0;
-        
+
         &__link {
           font-size: 18px;
           font-weight: 200;
@@ -1262,19 +1300,20 @@ a.top-scroll:hover {
           a {
             text-decoration: none;
             color: $primary-color;
-            padding-top: .8rem;
-            display:inline-block;
-      
-          
+            padding-top: 0.8rem;
+            display: inline-block;
+
             &:after {
-              display:block;
+              display: block;
               content: '';
-              border-bottom: solid 2px $primary-color;  
-              transform: scaleX(0);  
+              border-bottom: solid 2px $primary-color;
+              transform: scaleX(0);
               transition: transform 250ms ease-in-out;
             }
-          
-            &:hover:after { transform: scaleX(1); }
+
+            &:hover:after {
+              transform: scaleX(1);
+            }
           }
         }
       }
@@ -1284,7 +1323,7 @@ a.top-scroll:hover {
   .projects-nav {
     &__prev {
       padding: 0 7% 0 10%;
-  
+
       a {
         .n-desc {
           text-align: end;
@@ -1294,7 +1333,7 @@ a.top-scroll:hover {
 
     &__next {
       padding: 0 10% 0 7%;
-  
+
       a {
         .n-desc {
           text-align: start;
@@ -1303,132 +1342,3 @@ a.top-scroll:hover {
     }
   }
 }
-
-
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
-
-
-// @import "~bourbon/core";
-
-// @import '/assets/scss/core/mixins';
-// @import '/assets/scss/core/functions';
-// @import '/assets/scss/core/extends';
-// @import '/assets/scss/core/forms';
-// @import '/assets/scss/core/card';
-// @import '/assets/scss/core/buttons';
-// @import '/assets/scss/core/animations';
-// @import '~bulma/sass/utilities/all';
-// @import '~bulma/sass/base/all';
-// @import '~bulma/sass/grid/all';
-// @import '~bulma/sass/layout/section';
-// @import '~bulma/sass/components/level';
-// @import '~bulma/sass/elements/image';
-// @import '~bulma/sass/components/pagination';
-// @import '/assets/scss/layout';
-// @import '/assets/scss/login';
-// @import '/assets/scss/navbar';
-// @import '/assets/scss/user-profile';
-// @import '/assets/scss/person-profile';
-// @import '/assets/scss/org-profile';
-// @import '/assets/scss/org-filter';
-// @import '/assets/scss/logo';
-// @import '/assets/scss/avatar';
-// @import '/assets/scss/communications';
-// @import '/assets/scss/profile-header';
-// @import '/assets/scss/profile-card';
-// @import '/assets/scss/search';
-// @import '/assets/scss/position-details';
-// @import '/assets/scss/profile';
-// @import '/assets/scss/positions';
-// @import '/assets/scss/education';
-// @import '/assets/scss/careers';
-// @import '/assets/scss/biography';
-// @import '/assets/scss/profile-menu';
-// @import '/assets/scss/action-menu';
-// @import '/assets/scss/recent-views';
-// @import '/assets/scss/list';
-// @import '/assets/scss/communities';
-// @import '/assets/scss/note-link';
-// @import '/assets/scss/notes';
-// @import '/assets/scss/dashboard';
-// @import '/assets/scss/domain-list';
-// @import '/assets/scss/media-list';
-// @import '/assets/scss/multi-select';
-// @import '/assets/scss/virtual-multi-select';
-// @import '/assets/scss/pagination';
-// @import '/assets/scss/district-maps';
-// @import '/assets/scss/location';
-// @import '/assets/scss/user-menu';
-// @import '/assets/scss/search-filters';
-// @import '/assets/scss/utility-bar';
-// @import '/assets/scss/domain-menu';
-// @import '/assets/scss/search-bar';
-// @import '/assets/scss/tool-links';
-// @import '/assets/scss/org-name';
-// @import '/assets/scss/saved-searches';
-// @import '/assets/scss/saved-search-list';
-// @import '/assets/scss/saved-search-dialog';
-// @import '/assets/scss/org-chart';
-// @import '/assets/scss/popovers';
-// @import '/assets/scss/export-button';
-// @import '/assets/scss/domain-button';
-// @import '/assets/scss/footer';
-// @import '/assets/scss/connections';
-// @import '/assets/scss/profile-block';
-// @import '/assets/scss/memberships';
-// @import '/assets/scss/profile-drawer';
-// @import '/assets/scss/dialog';
-// @import '/assets/scss/contacts';
-// @import '/assets/scss/media-object';
-// @import '/assets/scss/federal-spend';
-// @import '/assets/scss/contracts';
-// @import '/assets/scss/contract-legend';
-// @import '/assets/scss/contract-list';
-// @import '/assets/scss/contract-details';
-// @import '/assets/scss/contract-profile';
-// @import '/assets/scss/user-details';
-// @import '/assets/scss/table';
-// @import '/assets/scss/applied-filters';
-// @import '/assets/scss/fed-spend-dashboard';
-// @import '/assets/scss/elections-dashboard';
-// @import '/assets/scss/discovery-cards-widget';
-// @import '/assets/scss/search-widget';
-// @import '/assets/scss/client-list';
-// @import '/assets/scss/business-details';
-// @import '/assets/scss/supp-data';
-// @import '/assets/scss/contact-info';
-// @import '/assets/scss/direct-reports';
-// @import '/assets/scss/expand-btn';
-// @import '/assets/scss/drawer-actions';
-// @import '/assets/scss/connections-list';
-// @import '/assets/scss/curated-search-list';
-// @import '/assets/scss/new-roles-card';
-// @import '/assets/scss/profile-action';
-// @import '/assets/scss/bills/bill-overview';
-// @import '/assets/scss/bills/bill-profile';
-// @import '/assets/scss/bills/sponsors';
-// @import '/assets/scss/bills/top-policy-area';
-// @import '/assets/scss/table-list';
-// @import '/assets/scss/tabs-card';
-// @import 'assets/scss/item-card';
-// @import 'assets/scss/alert-notifications';
-// @import 'assets/scss/alerts';
-// @import 'assets/scss/alert-details';
-// @import 'assets/scss/custom-card';
