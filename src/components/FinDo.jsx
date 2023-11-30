@@ -11,6 +11,7 @@ import finDo9 from '../img/Fin/9.png';
 import finDo10 from '../img/Fin/10.png';
 import finDo11 from '../img/Fin/11.png';
 import Reveal from './Reveal';
+import Footer from './Footer';
 
 const FinDo = () => {
   return (
@@ -21,21 +22,9 @@ const FinDo = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box col-sm-6 col-md-6">
                 <Reveal animationType={'leftToRight'}>
-                  <div className="feature px-2">
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={finDo1}
-                      alt=""
-                    />
-                  </div>
-                </Reveal>
-              </div>
-
-              <div className="container__box col-sm-6 col-md-6">
-                <Reveal animationType={'rightToLeft'}>
-                  <div className="heading heading--cook-it">
+                  <div className="heading heading--fin-do">
                     <h3 className="heading__text">FIN.do</h3>
-                    <div className="lead">
+                    <div className="lead lead--end">
                       Fin.do is a card-to-card money transfer
                       <br />
                       app enabling you to send money instantly
@@ -53,6 +42,17 @@ const FinDo = () => {
                     >
                       Fin.do
                     </a>
+                  </div>
+                </Reveal>
+              </div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'rightToLeft'}>
+                  <div className="feature px-2">
+                    <img
+                      className="cover-img cover-img--lg"
+                      src={finDo1}
+                      alt=""
+                    />
                   </div>
                 </Reveal>
               </div>
@@ -279,29 +279,12 @@ const FinDo = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <div className="text-center projects-nav">
-                    <div className="projects-nav__prev">
-                      <a href="evelina.html" rel="prev">
-                        <span className="n-desc" data-delay="0">
-                          Previous
-                        </span>
-                        <span className="n-title">Evelina</span>
-                      </a>
-                    </div>
-                    <div className="projects-nav__next">
-                      <a href="portland.html" rel="next">
-                        <span className="n-desc" data-delay="0">
-                          Next
-                        </span>
-                        <span className="n-title">Portland Electric</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Footer
+                prev={'Portland Electric'}
+                next={'SNOV.io'}
+                prevLink={'work/portland-electric'}
+                nextLink={'work/snov'}
+              />
             </div>
           </div>
         </div>

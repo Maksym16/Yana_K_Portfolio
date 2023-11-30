@@ -1,11 +1,11 @@
 import React from 'react';
-import { Outlet } from "react-router-dom";
+import ProjectSection from './ProjectSection';
 
 
 const Work = () => {
   return (
     <div>
-      <Outlet />
+      <ProjectSection />
     </div>
   );
 }

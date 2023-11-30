@@ -13,6 +13,7 @@ import snov10 from '../img/Snov/5.2.png';
 import snov11 from '../img/Snov/6.1.png';
 import snov12 from '../img/Snov/6.2.png';
 import Reveal from './Reveal';
+import Footer from './Footer';
 
 const Snov = () => {
   return (
@@ -128,7 +129,7 @@ const Snov = () => {
           </div>
         </div>
 
-        <div className="jumbotron jumbotron--snov-bg mt-5 py-1">
+        <div className="jumbotron jumbotron--snov-bg mt-5 py-4">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
@@ -152,13 +153,11 @@ const Snov = () => {
         <div className="jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--snov">Step 1 : Create account</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov1} alt="" />
-                    <img className="cover-img" src={snov2} alt="" />
-                  </div>
+              <div className="column-container">
+                <p className="title title--snov">Step 1 : Create account</p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov1} alt="" />
+                  <img className="cover-img--mid" src={snov2} alt="" />
                 </div>
               </div>
 
@@ -203,13 +202,11 @@ const Snov = () => {
         <div className="jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--snov">Step 2: Confirm email</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov3} alt="" />
-                    <img className="cover-img" src={snov4} alt="" />
-                  </div>
+              <div className="column-container">
+                <p className="title title--snov">Step 2: Confirm email</p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov3} alt="" />
+                  <img className="cover-img--mid" src={snov4} alt="" />
                 </div>
               </div>
 
@@ -245,7 +242,7 @@ const Snov = () => {
             </div>
           </div>
         </div>
-        <div className="jumbotron jumbotron--snov-bg m-0 py-1">
+        <div className="jumbotron jumbotron--snov-bg mb-5 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
@@ -274,13 +271,13 @@ const Snov = () => {
         <div className="jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--snov">Step 3: Collect personal information</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov5} alt="" />
-                    <img className="cover-img" src={snov6} alt="" />
-                  </div>
+              <div className="column-container">
+                <p className="title title--snov">
+                  Step 3: Collect personal information
+                </p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov5} alt="" />
+                  <img className="cover-img--mid" src={snov6} alt="" />
                 </div>
               </div>
 
@@ -348,13 +345,11 @@ const Snov = () => {
         <div className="jumbotron jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--snov">Step 4: Account set up</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov7} alt="" />
-                    <img className="cover-img" src={snov8} alt="" />
-                  </div>
+              <div className="column-container">
+                <p className="title title--snov">Step 4: Account set up</p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov7} alt="" />
+                  <img className="cover-img--mid" src={snov8} alt="" />
                 </div>
               </div>
 
@@ -395,13 +390,11 @@ const Snov = () => {
         <div className="jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--snov">Step 5: Dashboard</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov9} alt="" />
-                    <img className="cover-img" src={snov10} alt="" />
-                  </div>
+              <div className="column-container">
+                <p className="title title--snov ">Step 5: Dashboard</p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov9} alt="" />
+                  <img className="cover-img--mid" src={snov10} alt="" />
                 </div>
               </div>
 
@@ -444,7 +437,7 @@ const Snov = () => {
             </div>
           </div>
         </div>
-        <div className="jumbotron jumbotron--snov-bg m-0 py-1">
+        <div className="jumbotron jumbotron--snov-bg mb-5 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
@@ -466,12 +459,10 @@ const Snov = () => {
         <div className="jumbotron m-0 py-1">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="cover-img" src={snov11} alt="" />
-                    <img className="cover-img" src={snov12} alt="" />
-                  </div>
+              <div className="column-container">
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="cover-img--mid" src={snov11} alt="" />
+                  <img className="cover-img--mid" src={snov12} alt="" />
                 </div>
               </div>
 
@@ -510,7 +501,7 @@ const Snov = () => {
             </div>
           </div>
         </div>
-        <div className="jumbotron jumbotron--snov-bg m-0 py-1">
+        <div className="jumbotron jumbotron--snov-bg mb-5 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
@@ -537,6 +528,12 @@ const Snov = () => {
             </div>
           </div>
         </div>
+        <Footer
+          prev={'FIN.do'}
+          next={'Glow Yoga'}
+          prevLink={'work/fin-do'}
+          nextLink={'work/glow-yoga'}
+        />
       </div>
     </>
   );

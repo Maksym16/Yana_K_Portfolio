@@ -143,6 +143,7 @@ img {
 
 .main {
   font-size: 34px !important;
+  margin-bottom: 2rem;
 }
 
 .cover-img {
@@ -150,6 +151,11 @@ img {
 
   &--sm {
     height: 18rem;
+    padding: 0.3rem;
+  }
+
+  &--mid {
+    height: 23rem;
     padding: 0.3rem;
   }
 
@@ -1013,6 +1019,12 @@ a.top-scroll:hover {
             .cover-img {
               margin: 1rem 0;
 
+              &--mid {
+                height: 25rem !important;
+                padding: 0.3rem;
+                margin: 0;
+              }
+
               &--xlg {
                 height: 45rem;
                 padding: 0.3rem;
@@ -1203,6 +1215,11 @@ a.top-scroll:hover {
 
               &--sm {
                 height: 18rem;
+                padding: 0.3rem;
+              }
+
+              &--mid {
+                height: 15rem !important;
                 padding: 0.3rem;
               }
 

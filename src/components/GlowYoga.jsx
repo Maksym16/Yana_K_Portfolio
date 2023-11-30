@@ -11,7 +11,8 @@ import botMid from '../img/Glow_yoga/bot-mid.png';
 import botRight from '../img/Glow_yoga/bot-right.png';
 import designSystemMin from '../img/Glow_yoga/design-system-min.png';
 import testMin from '../img/Glow_yoga/test-min.png';
-
+import Reveal from './Reveal';
+import Footer from './Footer';
 
 const GlowYoga = () => {
   return (
@@ -25,11 +26,7 @@ const GlowYoga = () => {
                 data-animation="fadeInLeft"
               >
                 <div className="feature px-2">
-                  <img
-                    className="cover-img"
-                    src={glowYoga}
-                    alt=""
-                  />
+                  <img className="cover-img" src={glowYoga} alt="" />
                 </div>
               </div>
               <div
@@ -48,7 +45,8 @@ const GlowYoga = () => {
                       type="button"
                       className="cta cta--no-margin"
                       target="_blank"
-                      data-aos="fade-in" rel="noreferrer"
+                      data-aos="fade-in"
+                      rel="noreferrer"
                     >
                       Prototype
                     </a>
@@ -120,13 +118,12 @@ const GlowYoga = () => {
           </div>
         </div>
 
-        <div className="jumbotron m-0 py-1" style={{backgroundColor: '#F8F8F8'}}>
+        <div
+          className="jumbotron m-0 py-1"
+          style={{ backgroundColor: '#F8F8F8' }}
+        >
           <div className="container">
-            <img
-              className="cover-img"
-              src={researchCompare}
-              alt=""
-            />
+            <img className="cover-img" src={researchCompare} alt="" />
           </div>
         </div>
 
@@ -145,11 +142,7 @@ const GlowYoga = () => {
                     visited the studio on regular basics and those who've been
                     in from time to time.
                   </p>
-                  <img
-                    className="cover-img"
-                    src={researchResult}
-                    alt=""
-                  />
+                  <img className="cover-img" src={researchResult} alt="" />
                 </div>
               </div>
             </div>
@@ -161,7 +154,9 @@ const GlowYoga = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">Information Architecture</p>
+                  <p className="title title--glow-yoga">
+                    Information Architecture
+                  </p>
                   <p className="heavy">User Flow</p>
                   <p>
                     I created the user task flow for the new membership
@@ -171,11 +166,7 @@ const GlowYoga = () => {
                     The flow assumes the client enrolls in membership and checks
                     out online.{' '}
                   </p>
-                  <img
-                    className="cover-img"
-                    src={userFlowMin}
-                    alt=""
-                  />
+                  <img className="cover-img" src={userFlowMin} alt="" />
 
                   <p className="heavy">Site Map</p>
                   <p>
@@ -186,11 +177,7 @@ const GlowYoga = () => {
                     important in the new design to make it clean and easy to
                     navigate.{' '}
                   </p>
-                  <img
-                    className="cover-img"
-                    src={siteMapMin}
-                    alt=""
-                  />
+                  <img className="cover-img" src={siteMapMin} alt="" />
                 </div>
               </div>
 
@@ -239,7 +226,8 @@ const GlowYoga = () => {
                       type="button"
                       className="cta cta--no-margin"
                       target="_blank"
-                      data-aos="fade-in" rel="noreferrer"
+                      data-aos="fade-in"
+                      rel="noreferrer"
                     >
                       see it in action
                     </a>
@@ -254,11 +242,7 @@ const GlowYoga = () => {
                     For the UI kit I was responsible of creating a set of icons,
                     buttons and a color palette.
                   </p>
-                  <img
-                    className="cover-img"
-                    src={designSystemMin}
-                    alt=""
-                  />
+                  <img className="cover-img" src={designSystemMin} alt="" />
                 </div>
               </div>
 
@@ -273,11 +257,7 @@ const GlowYoga = () => {
                     navigation. The new membership registration process was 100%
                     successful competition rate.
                   </p>
-                  <img
-                    className="cover-img"
-                    src={testMin}
-                    alt=""
-                  />
+                  <img className="cover-img" src={testMin} alt="" />
                 </div>
               </div>
 
@@ -316,34 +296,12 @@ const GlowYoga = () => {
           </div>
         </div>
 
-        <div className="jumbotron m-0 py-1">
-          <div className="container">
-            <div className="row text-center px-lg-4 px-xl-5">
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <div className="text-center projects-nav">
-                    <div className="projects-nav__prev">
-                      <a href="portland.html" rel="prev">
-                        <span className="n-desc" data-delay="0">
-                          Previous
-                        </span>
-                        <span className="n-title">Portland Electric</span>
-                      </a>
-                    </div>
-                    <div className="projects-nav__next">
-                      <a href="evelina.html" rel="next">
-                        <span className="n-desc" data-delay="0">
-                          Next
-                        </span>
-                        <span className="n-title">Evelina</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer
+          prev={'SNOV.io'}
+          next={'Evelina'}
+          prevLink={'work/snov'}
+          nextLink={'work/evelina'}
+        />
       </div>
     </>
   );

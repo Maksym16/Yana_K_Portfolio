@@ -12,13 +12,13 @@ import wireframe2 from '../img/Portland/wireframe-2.png';
 import userTests from '../img/Portland/user-tests.png';
 import mockupPortland2 from '../img/Portland/mockup-portland-2.png';
 import mockupPortland3 from '../img/Portland/mockup-portland-3.png';
-import projectpageD  from '../img/Portland/Projectpage D.png';
+import projectpageD from '../img/Portland/Projectpage D.png';
 import contactPage from '../img/Portland/Contact page D.png';
 import designSystem from '../img/Portland/design-system.png';
 import logo3 from '../img/Portland/logo-3.png';
 import logo2 from '../img/Portland/logo-2.png';
 import logo1 from '../img/Portland/logo-1.png';
-
+import Footer from './Footer';
 
 const PortlandElectric = () => {
   return (
@@ -64,11 +64,7 @@ const PortlandElectric = () => {
                 data-animation="fadeInRight"
               >
                 <div className="feature px-2">
-                  <img
-                    className="cover-img"
-                    src={portlandHome}
-                    alt=""
-                  />
+                  <img className="cover-img" src={portlandHome} alt="" />
                 </div>
               </div>
             </div>
@@ -220,16 +216,8 @@ const PortlandElectric = () => {
                     local companies TICE and AA.
                   </p>
 
-                  <img
-                    className="cover-img"
-                    src={adServe}
-                    alt=""
-                  />
-                  <img
-                    className="cover-img"
-                    src={tice}
-                    alt=""
-                  />
+                  <img className="cover-img" src={adServe} alt="" />
+                  <img className="cover-img" src={tice} alt="" />
                 </div>
               </div>
 
@@ -241,11 +229,7 @@ const PortlandElectric = () => {
                     journey map to understand what will the users possible
                     experience will be when using website.
                   </p>
-                  <img
-                    className="cover-img"
-                    src={journeyMap}
-                    alt=""
-                  />
+                  <img className="cover-img" src={journeyMap} alt="" />
                 </div>
               </div>
             </div>
@@ -257,24 +241,18 @@ const PortlandElectric = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--portland">Information Architecture</p>
+                  <p className="title title--portland">
+                    Information Architecture
+                  </p>
                   <p className="heavy">User Flow</p>
-                  <img
-                    className="cover-img"
-                    src={userFlow}
-                    alt=""
-                  />
+                  <img className="cover-img" src={userFlow} alt="" />
                 </div>
               </div>
 
               <div className="container__box__inner">
                 <div className="column-container">
                   <p className="heavy">Site Map</p>
-                  <img
-                    className="cover-img"
-                    src={siteMap}
-                    alt=""
-                  />
+                  <img className="cover-img" src={siteMap} alt="" />
                 </div>
               </div>
 
@@ -286,16 +264,8 @@ const PortlandElectric = () => {
                     of the product. I started designing mobile-first.
                   </p>
                   <div className="container__box__inner container__box__inner--2">
-                    <img
-                      className="mockup"
-                      src={mockupPortland}
-                      alt=""
-                    />
-                    <img
-                      className="mockup"
-                      src={mockupPortland1}
-                      alt=""
-                    />
+                    <img className="mockup" src={mockupPortland} alt="" />
+                    <img className="mockup" src={mockupPortland1} alt="" />
                   </div>
 
                   <div className="container__box__inner container__box__inner--2">
@@ -338,11 +308,7 @@ const PortlandElectric = () => {
 
               <div className="container__box__inner container__box__inner--half">
                 <div className="container__box__inner container__box__inner__left">
-                  <img
-                    className="cover-img"
-                    src={userTests}
-                    alt=""
-                  />
+                  <img className="cover-img" src={userTests} alt="" />
                 </div>
                 <div className="container__box__inner container__box__inner__right">
                   <div className="column-container column-container--center">
@@ -363,16 +329,8 @@ const PortlandElectric = () => {
                 <div className="column-container">
                   <p className="title title--portland">Final Design</p>
                   <div className="container__box__inner container__box__inner--2">
-                    <img
-                      className="mockup"
-                      src={mockupPortland2}
-                      alt=""
-                    />
-                    <img
-                      className="mockup"
-                      src={mockupPortland3}
-                      alt=""
-                    />
+                    <img className="mockup" src={mockupPortland2} alt="" />
+                    <img className="mockup" src={mockupPortland3} alt="" />
                   </div>
                   <div className="text-center">
                     <a
@@ -429,11 +387,7 @@ const PortlandElectric = () => {
               <div className="container__box__inner container__box__inner--half container-margin-3">
                 <div className="container__box__inner container__box__inner__left">
                   <p className="heavy">Logo update</p>
-                  <img
-                    className="mockup mockup--xsx"
-                    src={logo3}
-                    alt=""
-                  />
+                  <img className="mockup mockup--xsx" src={logo3} alt="" />
                   <img src={logo1} alt="" />
                 </div>
                 <div className="container__box__inner container__box__inner__right">
@@ -469,29 +423,17 @@ const PortlandElectric = () => {
                     me a lot of information about what exactly I needed to
                     update at the website.
                   </p>
-                  <div className="text-center projects-nav">
-                    <div className="projects-nav__prev">
-                      <a href="cook_it.html" rel="prev">
-                        <span className="n-desc" data-delay="0">
-                          Previous
-                        </span>
-                        <span className="n-title">Cook It</span>
-                      </a>
-                    </div>
-                    <div className="projects-nav__next">
-                      <a href="evelina.html" rel="next">
-                        <span className="n-desc" data-delay="0">
-                          Next
-                        </span>
-                        <span className="n-title">Evelina</span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Footer
+          prev={'Evelina'}
+          next={'FIN.do'}
+          prevLink={'work/evelina'}
+          nextLink={'work/fin-do'}
+        />
       </div>
     </>
   );

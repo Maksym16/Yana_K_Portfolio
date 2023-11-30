@@ -4,11 +4,14 @@ import finDo from '../img/Fin/1.png';
 import portland from '../img/Portland/Home page D.png';
 import evelina from '../img/Evelina/home-page.png';
 import glowYoga from '../img/Glow_yoga/hero.png';
+import snov from '../img/Snov/hero.image.png';
+
 import Reveal from './Reveal';
 
 
 const projects = [
   {
+    id: 'fin-do',
     projectId: '--fin-do',
     name: 'FIN.do',
     description: `Fin.do is a card-to-card money transfer\napp enabling you to send money instantly\nto more than 50 countries.`,
@@ -18,16 +21,18 @@ const projects = [
     btnText: 'View project',
   },
   {
+    id: 'snov',
     projectId: '--snov',
     name: 'SNOV.io',
     description:
       'Snovio is a B2B platform that helps to find leads, automate\n\n cold mailings, sell better, and manage deals.',
     link: 'work/snov',
     aligmentPosition: 'left',
-    imgUrl: glowYoga,
+    imgUrl: snov,
     btnText: 'View project',
   },
   {
+    id: 'glow-yoga',
     projectId: '--glow-yoga',
     name: 'Glow Yoga',
     description: `Updating structure and website design\nfor yoga studio\n\nUX, UI design, Research,\nWireframing, Branding\n\nClient - Glow yoga, Brooklyn,NY`,
@@ -37,8 +42,9 @@ const projects = [
     btnText: 'View project',
   },
   {
+    id: 'evelina',
     projectId: '--evelina',
-    name: 'Evelina  ',
+    name: 'Evelina',
     description: `Branding for the restaurant website\nUI design, Wireframing,\n Branding, Accessibility testing\nClient - Evelina Bk, NY`,
     link: 'work/evelina',
     aligmentPosition: 'left',
@@ -46,6 +52,7 @@ const projects = [
     btnText: 'View project',
   },
   {
+    id: 'portland-electric',
     projectId: '--portland',
     name: 'Portland Electric',
     description:
@@ -84,7 +91,7 @@ const renderProjects = () => {
                   </div>
 
                   <Link
-                    to={p.link}
+                    to={`/${p.link}`}
                     type="button"
                     className="cta"
                     data-aos="fade-in"

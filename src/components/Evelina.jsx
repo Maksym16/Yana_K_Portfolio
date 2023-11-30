@@ -8,6 +8,7 @@ import imageMenu from '../img/Evelina/image-menu.png';
 import imageMenuNew from '../img/Evelina/image-menu-new.png';
 import imageH from '../img/Evelina/image-h.png';
 import imageHNew from '../img/Evelina/image-h-new.png';
+import Footer from './Footer';
 
 const Evelina = () => {
   return (
@@ -162,7 +163,9 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">Reservation Page Design</p>
+                  <p className="title title--evelina">
+                    Reservation Page Design
+                  </p>
 
                   <img className="cover-img" src={reservation} alt="" />
                 </div>
@@ -190,7 +193,9 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">ACCESSIBILITY IMPROVEMENTS</p>
+                  <p className="title title--evelina">
+                    ACCESSIBILITY IMPROVEMENTS
+                  </p>
 
                   <p>
                     Some of the website pages needed accessibility improvement -
@@ -244,24 +249,12 @@ const Evelina = () => {
                     </a>
                   </div>
 
-                  <div className="text-center projects-nav">
-                    <div className="projects-nav__prev">
-                      <a href="glow_yoga.html" rel="prev">
-                        <span className="n-desc" data-delay="0">
-                          Previous
-                        </span>
-                        <span className="n-title">Glow Yoga</span>
-                      </a>
-                    </div>
-                    <div className="projects-nav__next">
-                      <a href="cook_it.html" rel="next">
-                        <span className="n-desc" data-delay="0">
-                          Next
-                        </span>
-                        <span className="n-title">Cook It</span>
-                      </a>
-                    </div>
-                  </div>
+                  <Footer
+                    prev={'Glow Yoga'}
+                    next={'Portland Electric'}
+                    prevLink={'work/glow-yoga'}
+                    nextLink={'work/portland-electric'}
+                  />
                 </div>
               </div>
             </div>

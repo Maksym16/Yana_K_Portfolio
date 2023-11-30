@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link to="/" className="nav-link active">
+              <Link to="/work" className="nav-link active">
                 Work
               </Link>
             </li>
