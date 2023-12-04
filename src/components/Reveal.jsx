@@ -14,12 +14,12 @@ const Reveal = ({ children, animationType }) => {
 
   const animations = {
     leftToRight: {
-      hidden: { opacity: 0, x: "-120%" },
+      hidden: { opacity: 0, x: "-100%" },
       visible: { opacity: 1, x: 0 },
       transition: { duration: 0.8 }
     },
     rightToLeft: {
-      hidden: { opacity: 0, x: "120%" },
+      hidden: { opacity: 0, x: "100%" },
       visible: { opacity: 1, x: 0 },
       transition: { duration: 0.8 }
     },

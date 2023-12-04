@@ -18,6 +18,7 @@ import designSystem from '../img/Portland/design-system.png';
 import logo3 from '../img/Portland/logo-3.png';
 import logo2 from '../img/Portland/logo-2.png';
 import logo1 from '../img/Portland/logo-1.png';
+import Reveal from './Reveal';
 import Footer from './Footer';
 
 const PortlandElectric = () => {
@@ -27,45 +28,43 @@ const PortlandElectric = () => {
         <div className="jumbotron jumbotron--portland m-0 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInLeft"
-              >
-                <div className="feature px-2">
-                  <div className="heading heading--portland">
-                    <h3 className="heading__text">Portland Electric</h3>
-                    <div className="lead">website redesign</div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'leftToRight'}>
+                  <div className="feature px-2">
+                    <div className="heading heading--portland">
+                      <h3 className="heading__text">Portland Electric</h3>
+                      <div className="lead">website redesign</div>
 
-                    <a
-                      href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=343%3A1626&node-id=343%3A1627&viewport=281%2C48%2C0.17&scaling=scale-down&starting-point-node-id=343%3A1627&show-proto-sidebar=1&fbclid=IwAR2XUYo3n3FeZPMUqYDqN9JY7RH-O0Ui6WQRGi3YZQGcbGkzai6Q_KqOgr0"
-                      type="button"
-                      className="cta cta--no-margin"
-                      target="_blank"
-                      data-aos="fade-in"
-                      rel="noreferrer"
-                    >
-                      Mobile prototype
-                    </a>
-                    <a
-                      href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=387%3A5231&node-id=401%3A6241&viewport=281%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=401%3A6241&fbclid=IwAR13riHswDmGDgsDDuvebExp424NWpJoBjuLu1M4-JsX55MDml8zJalyVw4"
-                      type="button"
-                      className="cta cta--no-margin"
-                      target="_blank"
-                      data-aos="fade-in"
-                      rel="noreferrer"
-                    >
-                      Website prototype
-                    </a>
+                      <a
+                        href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=343%3A1626&node-id=343%3A1627&viewport=281%2C48%2C0.17&scaling=scale-down&starting-point-node-id=343%3A1627&show-proto-sidebar=1&fbclid=IwAR2XUYo3n3FeZPMUqYDqN9JY7RH-O0Ui6WQRGi3YZQGcbGkzai6Q_KqOgr0"
+                        type="button"
+                        className="cta cta--no-margin"
+                        target="_blank"
+                        data-aos="fade-in"
+                        rel="noreferrer"
+                      >
+                        Mobile prototype
+                      </a>
+                      <a
+                        href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=387%3A5231&node-id=401%3A6241&viewport=281%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=401%3A6241&fbclid=IwAR13riHswDmGDgsDDuvebExp424NWpJoBjuLu1M4-JsX55MDml8zJalyVw4"
+                        type="button"
+                        className="cta cta--no-margin"
+                        target="_blank"
+                        data-aos="fade-in"
+                        rel="noreferrer"
+                      >
+                        Website prototype
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </Reveal>
               </div>
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInRight"
-              >
-                <div className="feature px-2">
-                  <img className="cover-img" src={portlandHome} alt="" />
-                </div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'rightToLeft'}>
+                  <div className="feature px-2">
+                    <img className="cover-img" src={portlandHome} alt="" />
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -264,18 +263,18 @@ const PortlandElectric = () => {
                     of the product. I started designing mobile-first.
                   </p>
                   <div className="container__box__inner container__box__inner--2">
-                    <img className="mockup" src={mockupPortland} alt="" />
-                    <img className="mockup" src={mockupPortland1} alt="" />
+                    <img className="mockup--sm" src={mockupPortland} alt="" />
+                    <img className="mockup--sm" src={mockupPortland1} alt="" />
                   </div>
 
                   <div className="container__box__inner container__box__inner--2">
                     <img
-                      className="cover-img cover-img--lg"
+                      className="cover-img cover-img--sm"
                       src={wireframe}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--lg"
+                      className="cover-img cover-img--sm"
                       src={wireframe2}
                       alt=""
                     />
@@ -325,55 +324,53 @@ const PortlandElectric = () => {
                 </div>
               </div>
 
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--portland">Final Design</p>
-                  <div className="container__box__inner container__box__inner--2">
-                    <img className="mockup" src={mockupPortland2} alt="" />
-                    <img className="mockup" src={mockupPortland3} alt="" />
-                  </div>
-                  <div className="text-center">
-                    <a
-                      href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=343%3A1626&node-id=343%3A1627&viewport=281%2C48%2C0.17&scaling=scale-down&starting-point-node-id=343%3A1627&show-proto-sidebar=1&fbclid=IwAR2XUYo3n3FeZPMUqYDqN9JY7RH-O0Ui6WQRGi3YZQGcbGkzai6Q_KqOgr0"
-                      type="button"
-                      className="cta"
-                      target="_blank"
-                      data-aos="fade-in"
-                      rel="noreferrer"
-                    >
-                      Mobile prototype
-                    </a>
-                  </div>
+              <div className="column-container">
+                <p className="title title--portland">Final Design</p>
+                <div className="container__box__inner container__box__inner--2">
+                  <img className="mockup--sm" src={mockupPortland2} alt="" />
+                  <img className="mockup--sm" src={mockupPortland3} alt="" />
+                </div>
+                <div className="text-center">
+                  <a
+                    href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=343%3A1626&node-id=343%3A1627&viewport=281%2C48%2C0.17&scaling=scale-down&starting-point-node-id=343%3A1627&show-proto-sidebar=1&fbclid=IwAR2XUYo3n3FeZPMUqYDqN9JY7RH-O0Ui6WQRGi3YZQGcbGkzai6Q_KqOgr0"
+                    type="button"
+                    className="cta"
+                    target="_blank"
+                    data-aos="fade-in"
+                    rel="noreferrer"
+                  >
+                    Mobile prototype
+                  </a>
+                </div>
 
-                  <div className="container__box__inner container__box__inner--3">
-                    <img
-                      className="cover-img cover-img--sm"
-                      src={portlandHome}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--sm"
-                      src={projectpageD}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--sm"
-                      src={contactPage}
-                      alt=""
-                    />
-                  </div>
-                  <div className="text-center">
-                    <a
-                      href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=387%3A5231&node-id=401%3A6241&viewport=281%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=401%3A6241&fbclid=IwAR13riHswDmGDgsDDuvebExp424NWpJoBjuLu1M4-JsX55MDml8zJalyVw4"
-                      type="button"
-                      className="cta"
-                      target="_blank"
-                      data-aos="fade-in"
-                      rel="noreferrer"
-                    >
-                      Website prototype
-                    </a>
-                  </div>
+                <div className="container__box__inner container__box__inner--3">
+                  <img
+                    className="cover-img cover-img--sm"
+                    src={portlandHome}
+                    alt=""
+                  />
+                  <img
+                    className="cover-img cover-img--sm"
+                    src={projectpageD}
+                    alt=""
+                  />
+                  <img
+                    className="cover-img cover-img--sm"
+                    src={contactPage}
+                    alt=""
+                  />
+                </div>
+                <div className="text-center">
+                  <a
+                    href="https://www.figma.com/proto/CU0k0M5XaAVabq1y69xKQ5/redesign?page-id=387%3A5231&node-id=401%3A6241&viewport=281%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=401%3A6241&fbclid=IwAR13riHswDmGDgsDDuvebExp424NWpJoBjuLu1M4-JsX55MDml8zJalyVw4"
+                    type="button"
+                    className="cta"
+                    target="_blank"
+                    data-aos="fade-in"
+                    rel="noreferrer"
+                  >
+                    Website prototype
+                  </a>
                 </div>
               </div>
 

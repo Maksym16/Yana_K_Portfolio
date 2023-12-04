@@ -8,6 +8,7 @@ import imageMenu from '../img/Evelina/image-menu.png';
 import imageMenuNew from '../img/Evelina/image-menu-new.png';
 import imageH from '../img/Evelina/image-h.png';
 import imageHNew from '../img/Evelina/image-h-new.png';
+import Reveal from './Reveal';
 import Footer from './Footer';
 
 const Evelina = () => {
@@ -17,34 +18,33 @@ const Evelina = () => {
         <div className="jumbotron jumbotron--evelina m-0 py-5">
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInLeft"
-              >
-                <div className="feature px-2">
-                  <div className="heading heading--evelina">
-                    <h3 className="heading__text">Evelina</h3>
-                    <div className="lead">Concept for Evelina Website</div>
-
-                    <a
-                      href="https://www.figma.com/proto/gTPUJUH3jlA2Kv452yHONC/Project?page-id=54%3A378&node-id=66%3A269&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=84%3A708&hide-ui=1&fbclid=IwAR3D8qf22Wk0XiUKXcv0NTwBB0FR1MJeB39IGW9JguvotOVPPFBpotNDMKc"
-                      type="button"
-                      className="cta"
-                      target="_blank"
-                      data-aos="fade-in"
-                      rel="noreferrer"
-                    >
-                      see it in action
-                    </a>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'leftToRight'}>
+                  <div className="feature px-2">
+                    <img className="cover-img" src={evelinaHome} alt="" />
                   </div>
-                </div>
+                </Reveal>
               </div>
+              <div className="container__box col-sm-6 col-md-6">
+                <Reveal animationType={'rightToLeft'}>
+                  <div className="feature px-2">
+                    <div className="heading heading--evelina">
+                      <h3 className="heading__text">Evelina</h3>
+                      <div className="lead">Concept for Evelina Website</div>
 
-              <div
-                className="container__box col-sm-6 col-md-6 os-animation"
-                data-animation="fadeInRight"
-              >
-                <img className="cover-img" src={evelinaHome} alt="" />
+                      <a
+                        href="https://www.figma.com/proto/gTPUJUH3jlA2Kv452yHONC/Project?page-id=54%3A378&node-id=66%3A269&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=84%3A708&hide-ui=1&fbclid=IwAR3D8qf22Wk0XiUKXcv0NTwBB0FR1MJeB39IGW9JguvotOVPPFBpotNDMKc"
+                        type="button"
+                        className="cta"
+                        target="_blank"
+                        data-aos="fade-in"
+                        rel="noreferrer"
+                      >
+                        see it in action
+                      </a>
+                    </div>
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>

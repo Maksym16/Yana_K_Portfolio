@@ -1,0 +1,244 @@
+/*============= TOP SCROLL =============*/
+
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: 0.5;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: 0.5;
+}
+.top-scroll .svg-inline--fa {
+  background: white;
+  color: #53595f;
+  font-size: 4rem;
+  height: 1.7rem;
+}
+
+.projects-nav {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 600;
+  position: relative;
+  color: inherit;
+  font-size: 20px;
+  margin: 8% 0 8% 0;
+  font-family: Merriweather, sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+
+  &__prev {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Merriweather, sans-serif;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    line-height: 1em;
+    color: $primary-color;
+    width: 50%;
+    padding: 0 3% 0 27%;
+
+    a {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: Merriweather, sans-serif;
+      box-sizing: border-box;
+      background-color: transparent;
+      transition: color 0.15s ease;
+      text-decoration: none;
+      position: relative;
+      display: block;
+      line-height: 1em;
+      color: #0a0a0a;
+
+      .n-desc {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: Merriweather, sans-serif;
+        line-height: 1em;
+        color: #0a0a0a;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        padding-bottom: 12px;
+        border-bottom: 2px solid $primary-color;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          height: 4px;
+          width: 60%;
+          background-color: $primary-color;
+          transition: width 0.25s ease;
+        }
+
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .n-title {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        font-weight: 600;
+        font-family: Merriweather, sans-serif;
+        line-height: 1em;
+        color: #0a0a0a;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 12px;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        transform: translate3d(0, -12px, 0);
+        width: 100%;
+        cursor: default;
+        opacity: 0;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        transition-delay: 0s;
+        pointer-events: none;
+        word-wrap: break-word;
+      }
+
+      &:hover {
+        .n-title {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__next {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Merriweather, sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    display: block;
+    position: relative;
+    line-height: 1em;
+    color: $primary-color;
+    width: 50%;
+    padding: 0 27% 0 3%;
+
+    a {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: Merriweather, sans-serif;
+      box-sizing: border-box;
+      background-color: transparent;
+      transition: color 0.15s ease;
+      text-decoration: none;
+      position: relative;
+      display: block;
+      line-height: 1em;
+      color: #0a0a0a;
+
+      .n-desc {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: Merriweather, sans-serif;
+        line-height: 1em;
+        color: #0a0a0a;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        padding-bottom: 12px;
+        border-bottom: 2px solid $primary-color;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 4px;
+          width: 60%;
+          background-color: currentColor;
+          transition: width 0.25s ease;
+        }
+
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .n-title {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        font-weight: 600;
+        font-family: Merriweather, sans-serif;
+        line-height: 1em;
+        color: #0a0a0a;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 12px;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        transform: translate3d(0, -12px, 0);
+        width: 100%;
+        cursor: default;
+        opacity: 0;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        transition-delay: 0s;
+        pointer-events: none;
+        word-wrap: break-word;
+      }
+    }
+
+    &:hover {
+      .n-title {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}

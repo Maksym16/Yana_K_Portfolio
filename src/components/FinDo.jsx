@@ -10,6 +10,8 @@ import finDo8 from '../img/Fin/8.png';
 import finDo9 from '../img/Fin/9.png';
 import finDo10 from '../img/Fin/10.png';
 import finDo11 from '../img/Fin/11.png';
+import finDoOp from '../img/Fin/asset _1.png';
+import finDoOpt2 from '../img/Fin/asset_2.png';
 import Reveal from './Reveal';
 import Footer from './Footer';
 
@@ -49,7 +51,7 @@ const FinDo = () => {
                 <Reveal animationType={'rightToLeft'}>
                   <div className="feature px-2">
                     <img
-                      className="cover-img cover-img--lg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo1}
                       alt=""
                     />
@@ -64,7 +66,7 @@ const FinDo = () => {
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
-                <div className="container__box__inner container__box__inner__left">
+                <div className="container__box__inner container__box__inner__left-mid">
                   <p className="heavy">Project overview</p>
                 </div>
                 <div className="container__box__inner container__box__inner__right">
@@ -85,7 +87,7 @@ const FinDo = () => {
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
-                <div className="container__box__inner container__box__inner__left">
+                <div className="container__box__inner container__box__inner__left-mid">
                   <div className="column-container">
                     <p className="heavy">My role</p>
                     <p>
@@ -150,7 +152,7 @@ const FinDo = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <img className="cover-img" src={finDo1} alt="" />
+                  <img className="cover-img" src={finDoOp} alt="" />
                   <p>
                     To avoid frustration and increase retention, the flow was
                     separated for new users (Create account) and existing users
@@ -166,7 +168,7 @@ const FinDo = () => {
                     New flow - The process was divided for new users (Create
                     account) and returning users (Sign in).
                   </p>
-                  <img className="cover-img" src={finDo2} alt="" />
+                  <img className="cover-img" src={finDoOpt2} alt="" />
                 </div>
               </div>
 
@@ -202,29 +204,29 @@ const FinDo = () => {
                   </p>
                   <div className="container__box__inner container__box__inner--3">
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo1}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo2}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo3}
                       alt=""
                     />
                   </div>
                   <div className="container__box__inner container__box__inner--2">
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo4}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo5}
                       alt=""
                     />
@@ -245,34 +247,34 @@ const FinDo = () => {
                   </p>
                   <div className="container__box__inner container__box__inner--3">
                     <img
-                      className="cover-img cover-img--xlg"
-                      src={finDo6}
+                      className="cover-img cover-img--fin-do"
+                      src={finDo1}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo7}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo8}
                       alt=""
                     />
                   </div>
                   <div className="container__box__inner container__box__inner--3">
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo9}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo10}
                       alt=""
                     />
                     <img
-                      className="cover-img cover-img--xlg"
+                      className="cover-img cover-img--fin-do"
                       src={finDo11}
                       alt=""
                     />
