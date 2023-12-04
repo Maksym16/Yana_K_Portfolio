@@ -4,7 +4,6 @@ import finDo2 from '../img/Fin/2.png';
 import finDo3 from '../img/Fin/3.png';
 import finDo4 from '../img/Fin/4.png';
 import finDo5 from '../img/Fin/5.png';
-import finDo6 from '../img/Fin/6.png';
 import finDo7 from '../img/Fin/7.png';
 import finDo8 from '../img/Fin/8.png';
 import finDo9 from '../img/Fin/9.png';
