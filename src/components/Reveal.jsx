@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const Reveal = ({ children, animationType }) => {
+const Reveal = ({ children, animationType, delay }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -16,23 +16,24 @@ const Reveal = ({ children, animationType }) => {
     leftToRight: {
       hidden: { opacity: 0, x: "-100%" },
       visible: { opacity: 1, x: 0 },
-      transition: { duration: 0.8 }
+      transition: { duration: 0.8, delay: delay }
     },
     rightToLeft: {
       hidden: { opacity: 0, x: "100%" },
       visible: { opacity: 1, x: 0 },
-      transition: { duration: 0.8 }
+      transition: { duration: 0.8, delay: delay  }
     },
     botToTop: {
-      variants: {
-        hidden: {opacity: 0, y: 75},
-        visible: {opacity: 1, y: 0}
-      },
-      initial: "hidden",
-      animate: "visible",
-      transition: { duration: 0.5, delay: 0.5}
+      hidden: { opacity: 0, y: "100%" },
+      visible: { opacity: 1, y: 0 },
+      transition: { duration: 0.8, delay: delay }
+    },
+    topToBot: {
+      hidden: { opacity: 0, y: "-100%" },
+      visible: { opacity: 1, y: 0 },
+      transition: { duration: 0.8, delay: delay }
     }
-  }
+  };
 
   return (
     <motion.section

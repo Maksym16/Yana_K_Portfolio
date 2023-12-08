@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectSection from './ProjectSection';
+import Reveal from './Reveal';
 
 const Home = () => {
   return (
@@ -16,34 +17,47 @@ const Home = () => {
         {/* <!-- Start Landing Page Caption --> */}
         <div className="caption">
           <div className="caption__container">
-            <h1>Hello there!</h1>
-            <h2>
-              My name is Yana and I'm a UX/UI designer with a background in
-              economics and international relations. I help businesses succeed
-              by creating user-friendly, esthetically pleasing products that
-              bring people together.
-            </h2>
-            <h3>I’m open to new opportunities! For questions and hello’s</h3>
+            <Reveal animationType={'leftToRight'}>
+              <h1>Hello there!</h1>
+            </Reveal>
+            <Reveal animationType={'leftToRight'} delay={0.2}>
+              <h2>
+                I’m Yana UX/UI designer based in PA. <br />
+                I design applications, websites, <br />
+                and digital products.
+              </h2>
+            </Reveal>
+            <Reveal animationType={'leftToRight'} delay={0.3}>
+              <h3>Scroll down to see my work! </h3>
+            </Reveal>
             <div className="caption__container__links">
-              <h3>
-                <a
-                  href="mailto:ykotliar.wd@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Email
-                </a>
-              </h3>
+              <Reveal animationType={'botToTop'} delay={0.6}>
+                <h3>
+                  <a
+                    href="mailto:ykotliar.wd@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Email
+                  </a>
+                </h3>
+              </Reveal>
               <div className="line"></div>
-              <h3>
-                <a href="https://www.linkedin.com/in/yana-kotliar">Linkedin</a>
-              </h3>
+              <Reveal animationType={'botToTop'} delay={0.7}>
+                <h3>
+                  <a href="https://www.linkedin.com/in/yana-kotliar">
+                    Linkedin
+                  </a>
+                </h3>
+              </Reveal>
               <div className="line"></div>
-              <h3>
-                <a href="./img/Yana_Kotliar_CV.pdf" target="_blank">
-                  My Resume
-                </a>
-              </h3>
+              <Reveal animationType={'botToTop'} delay={0.8 }>
+                <h3>
+                  <a href="./img/Yana_Kotliar_CV.pdf" target="_blank">
+                    Resume
+                  </a>
+                </h3>
+              </Reveal>
             </div>
           </div>
         </div>

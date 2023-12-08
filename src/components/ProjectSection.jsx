@@ -69,8 +69,8 @@ const renderProjects = () => {
     <div key={idx} className={`jumbotron jumbotron${p.projectId} m-0 py-5`}>
       <div className="container">
         <div
-          className={`row text-center px-lg-4 px-xl-5 ${
-            p.aligmentPosition !== 'right' && 'flex-row-reverse'
+          className={`row text-center column-reverse px-lg-4 px-xl-5 ${
+           ( p.aligmentPosition !== 'right') && 'flex-row-reverse'
           }`}
         >
           <div className="container__box col-sm-6 col-md-6">
