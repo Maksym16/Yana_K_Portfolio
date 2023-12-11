@@ -35,7 +35,7 @@ const Snov = () => {
                     <div className="heading heading--snov">
                       <h3 className="heading__text">SNOV.io</h3>
                       <div className="lead">
-                        Snovio is a B2B platform that helps to find leads,
+                        Snov.io is a B2B platform that helps to find leads,
                         automate cold mailings, sell better, and manage deals.
                       </div>
 
@@ -65,7 +65,7 @@ const Snov = () => {
                 </div>
                 <div className="container__box__inner container__box__inner__right">
                   <p>
-                    Snovio is a B2B platform that helps to find leads, automate
+                    Snov.io is a B2B platform that helps to find leads, automate
                     cold mailings, sell better, and manage deals. The company
                     offers tools and Chrome extensions for lead generation,
                     verification of email addresses, newsletters, mail warm-up,
@@ -93,11 +93,10 @@ const Snov = () => {
                     <p>
                       UX Design (Flows, heuristic evaluation & wireframes)
                       <br />
-                      UX writing
                       <br />
-                      (Edited existing copy for clarity & tone of voice;
-                      <br />
+                      UX writing (Edited existing copy for clarity & tone of voice;
                       developed new microcopy)
+                      <br />
                       <br />
                       Figma, Miro
                       <br />
@@ -417,15 +416,7 @@ const Snov = () => {
                   </p>
 
                   <p className="heavy">After</p>
-                  <p>
-                    Highlighted the action we want the user to do the most;
-                    added accordion style for features (so the user can see
-                    action and description more clearly) Added CTA that will
-                    explain the user's next action exam “Install ...” Added
-                    consistency for CTAs - moved all CTAs at one place and made
-                    them consistent (added text to the buttons, so users won’t
-                    guess what button they clicking)
-                  </p>
+                  
                   <p>
                     To improve usability and user engagement with dashboard I
                     offered to focus on highlighting the actions we want user to
@@ -470,7 +461,7 @@ const Snov = () => {
                 <div className="column-container">
                   <p className="heavy">Before</p>
                   <p>
-                    Before The steps for set up in this email do not align
+                    The steps for set up in this email do not align
                     consistently with the actions users need to take within the
                     account. That causes difficulties in locating actions such
                     as downloading the extension and setting up the email
@@ -480,7 +471,7 @@ const Snov = () => {
 
                   <p className="heavy">After</p>
                   <p>
-                    To provide more personalized experience and improve
+                    To deliver more personalized experience and improve
                     usability:
                     <p>
                       - Provided clear instructions on what steps to take next,
@@ -488,7 +479,7 @@ const Snov = () => {
                       effective use of the platform;
                     </p>
                     <p>
-                      - Provided additional information about the features to
+                      - Added additional information about the features to
                       give users more understanding why installing them;
                     </p>
                     <p>

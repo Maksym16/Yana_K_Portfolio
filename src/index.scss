@@ -124,6 +124,10 @@ img {
   &--center {
     justify-content: center;
   }
+
+  &--no-space {
+    height: auto;
+  }
 }
 
 .container-margin-1 {

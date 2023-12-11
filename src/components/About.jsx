@@ -73,7 +73,7 @@ const About = () => {
 
                 <div className="column-container">
                   <div className="column-container">
-                    <p className="heavy">Information Architecture</p>
+                    <p className="heavy">Information architecture</p>
                     <p>Structuring information for better usability.</p>
                   </div>
                   <div className="column-container">

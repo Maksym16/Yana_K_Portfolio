@@ -80,7 +80,7 @@ const GlowYoga = () => {
           <div className="container">
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
-                <div className="container__box__inner container__box__inner__left">
+                <div className="container__box__inner container__box__inner__left-mid">
                   <div className="column-container">
                     <p className="heavy">My role</p>
                     <p>UX/UI designer</p>
@@ -88,9 +88,14 @@ const GlowYoga = () => {
                   <div className="column-container">
                     <p className="heavy">Tools & Methods</p>
                     <p>
-                      UX Design (User interviews,Flows, heuristic evaluation &
-                      wireframes) UI Design (Hi-Fi prototype, UI kit) Usability
-                      testing Figma, Maze, Miro
+                      UX Design (User interviews, flows, heuristic evaluation &
+                      wireframes)
+                      <br />
+                      <br /> UI Design (Hi-Fi prototype, UI kit)
+                      <br />
+                      <br /> Usability testing
+                      <br />
+                      <br /> Figma, Maze, Miro
                     </p>
                   </div>
                 </div>
@@ -314,7 +319,9 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">Outcomes & Results</p>
+                  <p className="title title--glow-yoga main">
+                    Outcomes & Results
+                  </p>
                   <p className="mid">
                     How can we improve the membership enrollment experience to
                     enhance usability, accessibility, and overall effectiveness?

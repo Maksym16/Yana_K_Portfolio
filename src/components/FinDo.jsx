@@ -99,16 +99,19 @@ const FinDo = () => {
                     <p>
                       UX analysis (Sign in flow)
                       <br />
+                      <br />
                       UX writing (Content analysis and microcopy)
                       <br />
+                      <br />
                       Prototyping (basic flow and interactions)
+                      <br />
                       <br />
                       Figma
                     </p>
                   </div>
                 </div>
                 <div className="container__box__inner container__box__inner__right">
-                  <div className="column-container">
+                  <div className="column-container column-container--no-space">
                     <p className="heavy">Challenge</p>
                     <p>
                       Because of unreliable Sing in process, the ratio of coming
@@ -140,16 +143,16 @@ const FinDo = () => {
                   </p>
                   <p>
                     Through analysis and evaluation of the existing onboarding
-                    (sign-in flow) was discovered that flow lacks a clear
+                    (Sign in flow) was discovered that flow lacks a clear
                     distinction between creating a new account and signing into
                     an existing one. This problem stops new users from finishing
-                    the sign-up, and those who already signed up are unsure
+                    the sign up, and those who already signed up are unsure
                     about using the app for money transfers because they worry
                     about account security. Improving this flow to tackle these
                     issues is crucial for enhancing the overall user experience.
                   </p>
                   <p className="mid">
-                    Current flow - The user is stuck because of the lack of a
+                    <span><h4>Current flow</h4></span> - The user is stuck because of the lack of a
                     clear distinction.
                   </p>
                 </div>
@@ -170,7 +173,7 @@ const FinDo = () => {
                     of the flow).
                   </p>
                   <p className="mid">
-                    New flow - The process was divided for new users (Create
+                    <span><h4>New flow</h4></span> - The process was divided for new users (Create
                     account) and returning users (Sign in).
                   </p>
                   <img className="cover-img" src={finDoOpt2} alt="" />
@@ -183,7 +186,7 @@ const FinDo = () => {
                   <p>
                     A new onboarding flow was defined through insights from
                     behavioral observation and UX analysis. The result was the
-                    creation of a new Sign-in flow that successfully helped the
+                    creation of a new Sign in flow that successfully helped the
                     client focus on increasing KPIs (adoption, retention,
                     account creation).
                   </p>
@@ -200,7 +203,7 @@ const FinDo = () => {
                 <div className="column-container">
                   <p className="title title--fin-do main">Sign in</p>
                   <p>
-                    In the sign-in process, we've revised header language and
+                    In the Sign in process, we've revised header language and
                     refined content, incorporating clear instructions, concise
                     headings, and user-friendly language to guide individuals
                     through each screen. Additionally, a Welcome screen has been
