@@ -32,6 +32,11 @@ const Reveal = ({ children, animationType, delay }) => {
       hidden: { opacity: 0, y: "-100%" },
       visible: { opacity: 1, y: 0 },
       transition: { duration: 0.8, delay: delay }
+    },
+    fadeIn: {
+      hidden: { opacity: 0, y: 0 },
+      visible: { opacity: 1, y: 0 },
+      transition: { duration: 0.8, delay: delay }
     }
   };
 

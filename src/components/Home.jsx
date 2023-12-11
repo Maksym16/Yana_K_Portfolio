@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import ProjectSection from './ProjectSection';
 import Reveal from './Reveal';
 
 const Home = () => {
+  const featuresRef = useRef();
   return (
     <>
-      <div id="home">
+      <div id="home" ref={featuresRef}>
         {/* <!-- Start Landing Page Image --> */}
         <div className="landing">
           <div className="home-wrap">
@@ -51,9 +52,9 @@ const Home = () => {
                 </h3>
               </Reveal>
               <div className="line"></div>
-              <Reveal animationType={'botToTop'} delay={0.8 }>
+              <Reveal animationType={'botToTop'} delay={0.8}>
                 <h3>
-                  <a href="./img/Yana_Kotliar_CV.pdf" target="_blank">
+                  <a href="../img/Yana Kotliar CV .pdf" target="_blank">
                     Resume
                   </a>
                 </h3>
@@ -64,16 +65,16 @@ const Home = () => {
         {/* <!-- End Landing Page Caption --> */}
 
         {/* <!-- Start Bouncing Down Arrow --> */}
-        <a href="#features" className="down-arrow text-center">
+        <div
+          className="down-arrow text-center"
+          onClick={() => window.scrollTo({ top: featuresRef.current.clientHeight, behavior: 'smooth' })}
+        >
           <div className="arrow d-none d-md-block">
             <i className="fas fa-angle-down"></i>
           </div>
-        </a>
+        </div>
       </div>
       <ProjectSection />
-      <a href="#home" className="top-scroll">
-        <i className="fa fa-angle-up"></i>
-      </a>
     </>
   );
 };

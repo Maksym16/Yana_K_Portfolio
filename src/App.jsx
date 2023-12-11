@@ -4,6 +4,7 @@ import About from './components/About'
 import Work from './components/Work'
 import Project from './pages/Project'
 import ScrollToTop from './components/ScrollToTop'
+import ScrollButton from './components/ScrollTopBtn'
 import { Routes, Route, Outlet } from "react-router-dom";
 
 function Layout() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="work/:id" element={<Project />} />
         </Route>
       </Routes>
+      <ScrollButton />
     </div>
   );
 }

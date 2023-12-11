@@ -690,7 +690,7 @@ a.btn,
     border-radius: 0;
     height: 100%;
     background-color: $white;
-    margin-top: 5rem !important;
+    // margin-top: 5rem !important;
     font-size: 18px;
     font-weight: 300;
     line-height: 20px;
@@ -704,6 +704,7 @@ a.btn,
       padding: 1rem 0;
       width: 100%;
       justify-items: center;
+      margin-top: 10rem;
 
       .about-img {
         height: 20rem;
@@ -711,7 +712,6 @@ a.btn,
       }
 
       &__info-container {
-        margin-right: 10rem;
         h1 {
           margin-bottom: 3rem;
         }
@@ -972,7 +972,8 @@ a.btn,
             display: flex;
             flex-direction: column;
 
-            .container__box__inner__left {
+            .container__box__inner__left,
+            .container__box__inner__left-mid {
               min-width: 100%;
               margin-right: 0;
             }
@@ -1038,7 +1039,7 @@ a.btn,
       border-radius: 0;
       height: 100%;
       background-color: $white;
-      margin-top: 5rem !important;
+      // margin-top: 5rem !important;
       font-size: 18px;
       font-weight: 300;
       line-height: 20px;
@@ -1047,11 +1048,12 @@ a.btn,
 
       .about-container {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         padding: 1rem 0;
         width: 100%;
         justify-items: center;
+        margin-top: 2rem;
 
         .about-img {
           height: 20rem;
@@ -1059,7 +1061,6 @@ a.btn,
         }
 
         &__info-container {
-          margin-right: 10rem;
           h1 {
             margin-bottom: 3rem;
           }
