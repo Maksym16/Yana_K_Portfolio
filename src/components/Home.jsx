@@ -46,7 +46,7 @@ const Home = () => {
               <div className="line"></div>
               <Reveal animationType={'botToTop'} delay={0.7}>
                 <h3>
-                  <a href="https://www.linkedin.com/in/yana-kotliar">
+                  <a href="https://www.linkedin.com/in/yana-kotliar" target="_blank" rel="noreferrer">
                     Linkedin
                   </a>
                 </h3>
@@ -54,7 +54,7 @@ const Home = () => {
               <div className="line"></div>
               <Reveal animationType={'botToTop'} delay={0.8}>
                 <h3>
-                  <a href="../img/Yana Kotliar CV .pdf" target="_blank">
+                  <a href="../img/YanaKotliarCV.pdf" target="_blank" rel="noreferrer">
                     Resume
                   </a>
                 </h3>

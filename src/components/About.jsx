@@ -41,7 +41,7 @@ const About = () => {
               </div>
               <Reveal animationType={'rightToLeft'} delay={0.6}>
                 <a
-                  href="../img/Yana Kotliar CV .pdf"
+                  href="../img/YanaKotliarCV.pdf"
                   target="_blank"
                   type="button"
                   className="cta"
@@ -102,7 +102,7 @@ const About = () => {
               </p>
               <div className="line"></div>
               <p className="caption__container__links__link">
-                <a href="../img/Yana Kotliar CV .pdff" target="_blank">
+                <a href="../img/YanaKotliarCV.pdf" target="_blank">
                   My Resume
                 </a>
               </p>
