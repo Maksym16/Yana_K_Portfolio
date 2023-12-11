@@ -8,13 +8,13 @@ import snov from '../img/Snov/hero.image.png';
 
 import Reveal from './Reveal';
 
-
 const projects = [
   {
     id: 'fin-do',
     projectId: '--fin-do',
     name: 'FIN.do',
-    description: `Fin.do is a card-to-card money transfer\napp enabling you to send money instantly\nto more than 50 countries.`,
+    description:
+      'Improving the usability of Sing in flow for money transfer application.',
     link: 'work/fin-do',
     aligmentPosition: 'right',
     imgUrl: finDo,
@@ -24,8 +24,7 @@ const projects = [
     id: 'snov',
     projectId: '--snov',
     name: 'SNOV.io',
-    description:
-      'Snovio is a B2B platform that helps to find leads, automate\n\n cold mailings, sell better, and manage deals.',
+    description: 'Content and UX updates for the B2B platform.',
     link: 'work/snov',
     aligmentPosition: 'left',
     imgUrl: snov,
@@ -35,7 +34,8 @@ const projects = [
     id: 'glow-yoga',
     projectId: '--glow-yoga',
     name: 'Glow Yoga',
-    description: `Updating structure and website design\nfor yoga studio\n\nUX, UI design, Research,\nWireframing, Branding\n\nClient - Glow yoga, Brooklyn,NY`,
+    description:
+      'Updating structure and responsive website design for the yoga studio.',
     link: 'work/glow-yoga',
     aligmentPosition: 'right',
     imgUrl: glowYoga,
@@ -45,7 +45,8 @@ const projects = [
     id: 'evelina',
     projectId: '--evelina',
     name: 'Evelina',
-    description: `Branding for the restaurant website\nUI design, Wireframing,\n Branding, Accessibility testing\nClient - Evelina Bk, NY`,
+    description:
+      'Branding and accessibility improvement for the restaurant website.',
     link: 'work/evelina',
     aligmentPosition: 'left',
     imgUrl: evelina,
@@ -56,11 +57,11 @@ const projects = [
     projectId: '--portland',
     name: 'Portland Electric',
     description:
-      'Responsive website design for a better\n user experience across devices.\n UX, UI design, Research, Wireframing,\n Branding, Usability testing, Prototyping\nClient - Portland Electric,OR\n',
+      'Responsive website design for a better user experience across devices.',
     link: 'work/portland-electric',
     aligmentPosition: 'right',
     imgUrl: portland,
-    btnText: 'Case Study',
+    btnText: 'View project',
   },
 ];
 
@@ -70,7 +71,7 @@ const renderProjects = () => {
       <div className="container">
         <div
           className={`row text-center column-reverse px-lg-4 px-xl-5 ${
-           ( p.aligmentPosition !== 'right') && 'flex-row-reverse'
+            p.aligmentPosition !== 'right' && 'flex-row-reverse'
           }`}
         >
           <div className="container__box col-sm-6 col-md-6">

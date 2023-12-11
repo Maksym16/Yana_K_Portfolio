@@ -113,7 +113,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">Story</p>
+                  <p className="title title--evelina main">Story</p>
 
                   <p>
                     Evelina is an upscale bistro in the heart of Brooklyn’s
@@ -135,7 +135,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">Design System</p>
+                  <p className="title title--evelina main">Design System</p>
 
                   <img className="cover-img" src={designSystem} alt="" />
                 </div>
@@ -149,7 +149,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">Home Page Design</p>
+                  <p className="title title--evelina main">Home Page Design</p>
 
                   <img className="cover-img" src={home} alt="" />
                 </div>
@@ -163,7 +163,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">
+                  <p className="title title--evelina main">
                     Reservation Page Design
                   </p>
 
@@ -179,7 +179,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">Menu Page Design</p>
+                  <p className="title title--evelina main">Menu Page Design</p>
 
                   <img className="cover-img" src={menuDinner} alt="" />
                 </div>
@@ -193,7 +193,7 @@ const Evelina = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--evelina">
+                  <p className="title title--evelina main">
                     ACCESSIBILITY IMPROVEMENTS
                   </p>
 

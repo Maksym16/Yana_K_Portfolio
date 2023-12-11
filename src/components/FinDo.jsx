@@ -97,8 +97,12 @@ const FinDo = () => {
                   <div className="column-container">
                     <p className="heavy">Tools & Methods</p>
                     <p>
-                      UX analysis (Sign in flow) UX writing (Content analysis
-                      and microcopy) Prototyping (basic flow and interactions)
+                      UX analysis (Sign in flow)
+                      <br />
+                      UX writing (Content analysis and microcopy)
+                      <br />
+                      Prototyping (basic flow and interactions)
+                      <br />
                       Figma
                     </p>
                   </div>
@@ -131,7 +135,9 @@ const FinDo = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--fin-do">Opportunity & Solutions</p>
+                  <p className="title title--fin-do main">
+                    Opportunity & Solutions
+                  </p>
                   <p>
                     Through analysis and evaluation of the existing onboarding
                     (sign-in flow) was discovered that flow lacks a clear
@@ -173,7 +179,7 @@ const FinDo = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--fin-do">Outcomes & Results</p>
+                  <p className="title title--fin-do main">Outcomes & Results</p>
                   <p>
                     A new onboarding flow was defined through insights from
                     behavioral observation and UX analysis. The result was the
@@ -192,7 +198,7 @@ const FinDo = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--fin-do">Sign in</p>
+                  <p className="title title--fin-do main">Sign in</p>
                   <p>
                     In the sign-in process, we've revised header language and
                     refined content, incorporating clear instructions, concise
@@ -235,7 +241,7 @@ const FinDo = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--fin-do">Create account</p>
+                  <p className="title title--fin-do main">Create account</p>
                   <p>
                     Quick, transparent, and simple: Users can create an account
                     and initiate easy money transfers in three straightforward

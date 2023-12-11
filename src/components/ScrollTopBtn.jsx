@@ -22,12 +22,12 @@ const ScrollButton = () => {
  
   return (
     showScrollButton && (
-      <button
+      <div
         className="top-scroll"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         <i className="fa fa-angle-up"></i>
-      </button>
+      </div>
     )
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import Reveal from './Reveal';
 
 import yana from '../img/pic 2.png';
+import yanaCV from '../img/YanaKotliarCV.pdf';
 
 const About = () => {
   return (
@@ -41,10 +42,11 @@ const About = () => {
               </div>
               <Reveal animationType={'rightToLeft'} delay={0.6}>
                 <a
-                  href="../img/YanaKotliarCV.pdf"
+                  href={yanaCV}
                   target="_blank"
                   type="button"
                   className="cta"
+                  rel="noreferrer"
                 >
                   My Resume
                 </a>
@@ -56,7 +58,7 @@ const About = () => {
         <div className="jumbotron jumbotron--dark m-0 py-5">
           <Reveal animationType={'fadeIn'} delay={0.7}>
             <div className="box">
-              <p className="heavy">How can I help</p>
+              <h1>How can I help</h1>
               <div className="container-wrapper">
                 <div className="column-container">
                   <div className="column-container">
@@ -102,7 +104,7 @@ const About = () => {
               </p>
               <div className="line"></div>
               <p className="caption__container__links__link">
-                <a href="../img/YanaKotliarCV.pdf" target="_blank">
+                <a href={yanaCV} target="_blank" rel="noreferrer">
                   My Resume
                 </a>
               </p>

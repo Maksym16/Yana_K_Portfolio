@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import ProjectSection from './ProjectSection';
 import Reveal from './Reveal';
+import yanaCV from '../img/YanaKotliarCV.pdf';
 
 const Home = () => {
   const featuresRef = useRef();
@@ -54,7 +55,7 @@ const Home = () => {
               <div className="line"></div>
               <Reveal animationType={'botToTop'} delay={0.8}>
                 <h3>
-                  <a href="../img/YanaKotliarCV.pdf" target="_blank" rel="noreferrer">
+                  <a href={yanaCV} target="_blank" rel="noreferrer">
                     Resume
                   </a>
                 </h3>

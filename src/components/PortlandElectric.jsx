@@ -135,7 +135,7 @@ const PortlandElectric = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--portland">Story</p>
+                  <p className="title title--portland main">Story</p>
 
                   <p>
                     Portland Electric is an electric company in Vancouver, WA.
@@ -156,7 +156,7 @@ const PortlandElectric = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--portland">UX Research</p>
+                  <p className="title title--portland main">UX Research</p>
                   <p className="heavy">Goals</p>
                   <p>
                     Find out who is a target audience of PE site
@@ -240,7 +240,7 @@ const PortlandElectric = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--portland">
+                  <p className="title title--portland main">
                     Information Architecture
                   </p>
                   <p className="heavy">User Flow</p>
@@ -325,7 +325,7 @@ const PortlandElectric = () => {
               </div>
 
               <div className="column-container">
-                <p className="title title--portland">Final Design</p>
+                <p className="title title--portland main">Final Design</p>
                 <div className="container__box__inner container__box__inner--2">
                   <img className="mockup--sm" src={mockupPortland2} alt="" />
                   <img className="mockup--sm" src={mockupPortland3} alt="" />
@@ -409,7 +409,7 @@ const PortlandElectric = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--portland">Final Thoughts</p>
+                  <p className="title title--portland main">Final Thoughts</p>
                   <p>
                     This project was my first experience working with a real
                     client. It was important for me to create a product that

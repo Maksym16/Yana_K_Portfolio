@@ -126,7 +126,7 @@ const GlowYoga = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">Research</p>
+                  <p className="title title--glow-yoga main">Research</p>
 
                   <p>
                     <span className="heavy">Evaluation of current product</span>
@@ -182,7 +182,7 @@ const GlowYoga = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">
+                  <p className="title title--glow-yoga main">
                     Information Architecture
                   </p>
                   <p className="heavy">Analysis</p>
@@ -232,7 +232,7 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">Design</p>
+                  <p className="title title--glow-yoga main">Design</p>
                   <div className="container__box__inner container__box__inner--3">
                     <img
                       className="cover-img cover-img--lg"
@@ -286,7 +286,7 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">UI Kit</p>
+                  <p className="title title--glow-yoga main">UI Kit</p>
                   <p>
                     I took charge of crafting a comprehensive UI kit, which
                     involved designing a collection of icons, buttons, and a
@@ -299,7 +299,7 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">Test</p>
+                  <p className="title title--glow-yoga main">Test</p>
                   <p>
                     Before transitioning the design to the development phase, I
                     conducted usability and branding tests using a high-fidelity
@@ -314,7 +314,7 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga">Outcomes & Results</p>
+                  <p className="title title--glow-yoga main">Outcomes & Results</p>
                   <p className="mid">
                     How can we improve the membership enrollment experience to
                     enhance usability, accessibility, and overall effectiveness?
