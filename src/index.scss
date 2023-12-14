@@ -787,16 +787,91 @@ a.btn,
   }
 }
 
-/*============= MEDIA QUERIES =============*/
-@media (max-width: 1216.98px) {
+@media (max-width: 1516.98px) {
   .caption {
-    h1 {
-      font-size: 3rem;
-    }
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 
     &__container {
       width: 80vw;
-      padding-right: 15%;
+      padding-right: 20%;
+
+      &__links {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+      }
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
+      line-height: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
+      line-height: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+/*============= MEDIA QUERIES =============*/
+@media (max-width: 1216.98px) {
+  .caption {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+      width: 80vw;
+      padding-right: 20%;
+
+      &__links {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+      }
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
+      line-height: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.4rem;
+      line-height: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -840,7 +915,7 @@ a.btn,
 
     &__container {
       width: 80vw;
-      padding-right: 10%;
+      padding-right: 5%;
 
       &__links {
         display: flex;
@@ -857,7 +932,7 @@ a.btn,
     }
 
     h3 {
-      font-size: 2.2rem;
+      font-size: 1.5rem;
       padding-bottom: 1.7rem;
     }
   }
@@ -922,7 +997,6 @@ a.btn,
     }
 
     h1 {
-      // margin-top: 10rem;
       font-size: 1.9rem;
       letter-spacing: 0.1rem;
       padding-bottom: 0.4rem;
@@ -931,7 +1005,6 @@ a.btn,
     }
 
     h2 {
-      // margin-top: 10rem;
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
       padding-bottom: 0.4rem;
@@ -953,6 +1026,16 @@ a.btn,
   #features {
     .jumbotron {
       border-radius: 0;
+
+      &--fin-do,
+      &--glow-yoga,
+      &--portland {
+        .container {
+          .row {
+            flex-direction: column-reverse !important;
+          }
+        }
+      }
 
       .container {
         .column-reverse {
