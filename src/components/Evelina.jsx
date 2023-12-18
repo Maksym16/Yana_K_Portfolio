@@ -194,7 +194,7 @@ const Evelina = () => {
               <div className="container__box__inner">
                 <div className="column-container">
                   <p className="title title--evelina main">
-                    ACCESSIBILITY IMPROVEMENTS
+                    Accessibility Improvements
                   </p>
 
                   <p>
