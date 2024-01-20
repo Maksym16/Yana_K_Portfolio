@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
-import Work from './components/Work'
+import Projects from './components/Projects'
 import Project from './pages/Project'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollButton from './components/ScrollTopBtn'
@@ -24,8 +24,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="work" element={<Work />} />
-          <Route path="work/:id" element={<Project />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/:id" element={<Project />} />
         </Route>
       </Routes>
       <ScrollButton />

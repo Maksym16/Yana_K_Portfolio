@@ -428,8 +428,8 @@ const PortlandElectric = () => {
         <Footer
           prev={'Evelina'}
           next={'FIN.do'}
-          prevLink={'work/evelina'}
-          nextLink={'work/fin-do'}
+          prevLink={'projects/evelina'}
+          nextLink={'projects/fin-do'}
         />
       </div>
     </>

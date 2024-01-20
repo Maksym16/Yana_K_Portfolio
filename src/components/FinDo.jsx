@@ -152,8 +152,11 @@ const FinDo = () => {
                     issues is crucial for enhancing the overall user experience.
                   </p>
                   <p className="mid">
-                    <span><h4>Current flow</h4></span> - The user is stuck because of the lack of a
-                    clear distinction.
+                    <span>
+                      <h4>Current flow</h4>
+                    </span>{' '}
+                    - The user is stuck because of the lack of a clear
+                    distinction.
                   </p>
                 </div>
               </div>
@@ -173,8 +176,11 @@ const FinDo = () => {
                     of the flow).
                   </p>
                   <p className="mid">
-                    <span><h4>New flow</h4></span> - The process was divided for new users (Create
-                    account) and returning users (Sign in).
+                    <span>
+                      <h4>New flow</h4>
+                    </span>{' '}
+                    - The process was divided for new users (Create account) and
+                    returning users (Sign in).
                   </p>
                   <img className="cover-img" src={finDoOpt2} alt="" />
                 </div>
@@ -289,11 +295,12 @@ const FinDo = () => {
                   </div>
                 </div>
               </div>
+
               <Footer
-                prev={'Portland Electric'}
+                prev={'Evelina'}
                 next={'SNOV.io'}
-                prevLink={'work/portland-electric'}
-                nextLink={'work/snov'}
+                prevLink={'projects/evelina'}
+                nextLink={'projects/snov'}
               />
             </div>
           </div>

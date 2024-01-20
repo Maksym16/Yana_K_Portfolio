@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../img/Snov/hero.image.png';
+import hero from '../img/Snov/snov.png';
 import snov1 from '../img/Snov/1.png';
 import snov2 from '../img/Snov/1.1.png';
 import snov3 from '../img/Snov/2.1.png';
@@ -522,8 +522,8 @@ const Snov = () => {
         <Footer
           prev={'FIN.do'}
           next={'Glow Yoga'}
-          prevLink={'work/fin-do'}
-          nextLink={'work/glow-yoga'}
+          prevLink={'projects/fin-do'}
+          nextLink={'projects/glow-yoga'}
         />
       </div>
     </>

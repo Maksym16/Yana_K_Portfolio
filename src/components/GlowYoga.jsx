@@ -1,18 +1,26 @@
 import React from 'react';
-import glowYoga from '../img/Glow_yoga/hero.png';
-import researchCompare from '../img/Glow_yoga/research-compare-min.png';
-import researchResult from '../img/Glow_yoga/research-result-min.png';
-import userFlowMin from '../img/Glow_yoga/user-flow-min.png';
-import siteMapMin from '../img/Glow_yoga/site-map-min.png';
-import topMid from '../img/Glow_yoga/top-mid.png';
-import topRight from '../img/Glow_yoga/top-mid.png';
-import botLeft from '../img/Glow_yoga/bot-left.png';
-import botMid from '../img/Glow_yoga/bot-mid.png';
-import botRight from '../img/Glow_yoga/bot-right.png';
-import designSystemMin from '../img/Glow_yoga/design-system-min.png';
-import testMin from '../img/Glow_yoga/test-min.png';
+import glowYoga from '../img/Yoga/Main_pic.png';
+import researchCompare from '../img/Yoga/research-compare-min.png';
+import researchResult from '../img/Yoga/research-result.png';
+import analysis from '../img/Yoga/analysis.png';
+import featurePrioritization from '../img/Yoga/feature-prioritization.png';
+import userFlow from '../img/Yoga/user-flow.png';
+import siteMapMin from '../img/Yoga/site-map.png';
+import membership from '../img/Yoga/Other_Pic.png';
+import membershipMob from '../img/Yoga/membership-mob.png';
+import allSet from '../img/Yoga/all_set.png';
+import faq from '../img/Yoga/faq.png';
+import price from '../img/Yoga/price.png';
+import journey from '../img/Yoga/journey.png';
+import classes from '../img/Yoga/classes.png';
+import pDetailes from '../img/Yoga/p-detailes.png';
+import checkout from '../img/Yoga/checkout.png';
+import review from '../img/Yoga/review.png';
+import designSystem from '../img/Yoga/design-system.png';
+import testMin from '../img/Yoga/test.png';
 import Reveal from './Reveal';
 import Footer from './Footer';
+import glovYogaDoc from '../img/GlovYogaResearch.pdf';
 
 const GlowYoga = () => {
   return (
@@ -29,17 +37,6 @@ const GlowYoga = () => {
                         Website design <br />
                         for yoga studio
                       </h3>
-
-                      <a
-                        href="https://www.figma.com/proto/hgc3Kj3583i4CEtQBgHGAF/Yoga-project?node-id=321%3A10400&scaling=scale-down&page-id=206%3A7359&starting-point-node-id=321%3A10400&fbclid=IwAR3F2wgYlxHRoKeXDJIPzhVdY976R6-oDVMkfOXx-lz_W-l4G-kPlQ2FH6I"
-                        type="button"
-                        className="cta cta--no-margin"
-                        target="_blank"
-                        data-aos="fade-in"
-                        rel="noreferrer"
-                      >
-                        Prototype
-                      </a>
                     </div>
                   </div>
                 </Reveal>
@@ -131,7 +128,7 @@ const GlowYoga = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">Research</p>
+                  <p className="title title--glow-yoga main py-3">Research</p>
 
                   <p>
                     <span className="heavy">Evaluation of current product</span>
@@ -187,15 +184,12 @@ const GlowYoga = () => {
             <div className="row text-center px-lg-4 px-xl-5">
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">
-                    Information Architecture
-                  </p>
                   <p className="heavy">Analysis</p>
                   <p>
                     I employed affinity mapping to analyze user behaviors,
                     identify needs, and pinpoint pain points.
                   </p>
-                  <img className="cover-img" src={userFlowMin} alt="" />
+                  <img className="cover-img" src={analysis} alt="" />
 
                   <p className="heavy">Feature prioritization</p>
                   <p>
@@ -204,8 +198,14 @@ const GlowYoga = () => {
                     identifying the features that are currently most relevant
                     and should be prioritized for focus.
                   </p>
-                  <img className="cover-img" src={siteMapMin} alt="" />
-
+                  <img
+                    className="cover-img"
+                    src={featurePrioritization}
+                    alt=""
+                  />
+                  <p className="title title--glow-yoga main py-5">
+                    Information Architecture
+                  </p>
                   <p className="heavy">User Flow</p>
                   <p>
                     I developed the user task flow for the new membership
@@ -214,7 +214,7 @@ const GlowYoga = () => {
                     client's enrollment in membership and the online checkout
                     process.
                   </p>
-                  <img className="cover-img" src={userFlowMin} alt="" />
+                  <img className="cover-img" src={userFlow} alt="" />
 
                   <p className="heavy">Site Map</p>
                   <p>
@@ -232,79 +232,151 @@ const GlowYoga = () => {
                     navigation experience.
                   </p>
                   <img className="cover-img" src={siteMapMin} alt="" />
-                </div>
-              </div>
-
-              <div className="container__box__inner">
-                <div className="column-container">
-                  <p className="title title--glow-yoga main">Design</p>
-                  <div className="container__box__inner container__box__inner--3">
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={glowYoga}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={topMid}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={topRight}
-                      alt=""
-                    />
-                  </div>
-
-                  <div className="container__box__inner container__box__inner--3">
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={botLeft}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={botMid}
-                      alt=""
-                    />
-                    <img
-                      className="cover-img cover-img--lg"
-                      src={botRight}
-                      alt=""
-                    />
-                  </div>
-
                   <div className="text-center">
                     <a
-                      href="https://www.figma.com/proto/hgc3Kj3583i4CEtQBgHGAF/Yoga-project?node-id=321%3A10400&scaling=scale-down&page-id=206%3A7359&starting-point-node-id=321%3A10400&fbclid=IwAR3F2wgYlxHRoKeXDJIPzhVdY976R6-oDVMkfOXx-lz_W-l4G-kPlQ2FH6I"
+                      href={glovYogaDoc}
                       type="button"
-                      className="cta cta--no-margin"
+                      className="cta cta--yoga"
                       target="_blank"
-                      data-aos="fade-in"
                       rel="noreferrer"
                     >
-                      see it in action
+                      View detailed user research report
                     </a>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="jumbotron m-0 pt-4 pb-1">
+          <div className="container">
+            <div className="row text-center">
+              <div className="column-container">
+                <p className="title title--glow-yoga main py-3">Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="jumbotron jumbotron--yoga-light m-0 py-1">
+          <div className="container">
+            <div className="row text-center">
+              <div className="column-container">
+                <div className="container__box__inner container__box__inner--2">
+                  <img
+                    className="cover-img cover-img"
+                    src={glowYoga}
+                    alt=""
+                  />
+                  <div className="column-container column-container--center-margin">
+                    <p className="heavy">New updated design</p>
+                    <p>
+                      The updated responsive design not only reflects the
+                      studio's cultural essence but also ensures a consistent
+                      representation across various devices.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="container__box__inner container__box__inner--2">
+                  <div className="column-container column-container--center">
+                    <p className="heavy">Easy membership enrollment</p>
+                    <p>
+                      Sign-up process for new memberships offers a smoother and
+                      more straightforward experience, making it easy for users
+                      to enroll and become members.
+                    </p>
+                  </div>
+                  <img
+                    className="cover-img cover-img"
+                    src={membership}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="jumbotron m-0 py-1">
+          <div className="container">
+            <div className="row text-center px-lg-4 px-xl-5">
+              <div className="container__box__inner">
+                <div className="column-container">
+                  <p className="title title--glow-yoga main py-4">
+                    Hi-fidelity mockups
+                  </p>
+                  <div className="container__box__inner container__box__inner--3">
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={journey}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={classes}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={faq}
+                      alt=""
+                    />
+                  </div>
+                  <div className="container__box__inner container__box__inner--3">
+                  <img
+                      className="cover-img cover-img--fin-do"
+                      src={price}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={membershipMob}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={pDetailes}
+                      alt=""
+                    />
+                  </div>
+                  <div className="container__box__inner container__box__inner--3">
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={review}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={checkout}
+                      alt=""
+                    />
+                    <img
+                      className="cover-img cover-img--fin-do"
+                      src={allSet}
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">UI Kit</p>
+                  <p className="title title--glow-yoga main py-3">UI Kit</p>
                   <p>
                     I took charge of crafting a comprehensive UI kit, which
                     involved designing a collection of icons, buttons, and a
                     refined color palette, ensuring a professional and
                     user-centric visual language for the project.
                   </p>
-                  <img className="cover-img" src={designSystemMin} alt="" />
+                  <img className="cover-img" src={designSystem} alt="" />
                 </div>
               </div>
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">Test</p>
+                  <p className="title title--glow-yoga main py-3">Test</p>
                   <p>
                     Before transitioning the design to the development phase, I
                     conducted usability and branding tests using a high-fidelity
@@ -319,7 +391,7 @@ const GlowYoga = () => {
 
               <div className="container__box__inner">
                 <div className="column-container">
-                  <p className="title title--glow-yoga main">
+                  <p className="title title--glow-yoga main py-3">
                     Outcomes & Results
                   </p>
                   <p className="mid">
@@ -347,8 +419,8 @@ const GlowYoga = () => {
         <Footer
           prev={'SNOV.io'}
           next={'Evelina'}
-          prevLink={'work/snov'}
-          nextLink={'work/evelina'}
+          prevLink={'projects/snov'}
+          nextLink={'projects/evelina'}
         />
       </div>
     </>

@@ -88,6 +88,20 @@ img {
     }
   }
 
+  &--yoga {
+    color: $glow-yoga !important;
+    background-color: transparent;
+    border: 2px solid $glow-yoga !important;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+
+    &:hover {
+      color: white !important;
+      background-color: $glow-yoga !important;
+    }
+  }
+
   &--no-margin {
     &:first-of-type {
       margin-top: 5rem;
@@ -123,6 +137,11 @@ img {
 
   &--center {
     justify-content: center;
+  }
+
+  &--center-margin {
+    justify-content: center;
+    margin-left: 8rem;
   }
 
   &--no-space {
@@ -651,6 +670,10 @@ a.btn,
       @include background-color($dark_light);
     }
 
+    &--yoga-light {
+      @include background-color($glow-yoga-bg);
+    }
+
     &--snov-bg {
       @include background-color($snov-bg);
     }
@@ -940,6 +963,12 @@ a.btn,
 
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
+  .column-container {
+    &--center-margin {
+      margin-left: 0;
+    }
+  }
+
   .caption {
     z-index: 1;
     position: absolute;

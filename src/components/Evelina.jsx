@@ -1,5 +1,5 @@
 import React from 'react';
-import evelinaHome from '../img/Evelina/home-page.png';
+import evelinaHome from '../img/Evelina/Evelina_main_pic.png';
 import designSystem from '../img/Evelina/design-system.jpg';
 import home from '../img/Evelina/home page.png';
 import reservation from '../img/Evelina/reservation.png';
@@ -251,9 +251,9 @@ const Evelina = () => {
 
                   <Footer
                     prev={'Glow Yoga'}
-                    next={'Portland Electric'}
-                    prevLink={'work/glow-yoga'}
-                    nextLink={'work/portland-electric'}
+                    next={'FIN.do'}
+                    prevLink={'projects/glow-yoga'}
+                    nextLink={'projects/fin-do'}
                   />
                 </div>
               </div>

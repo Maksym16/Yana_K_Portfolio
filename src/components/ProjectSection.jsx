@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import finDo from '../img/Fin/1.png';
-import portland from '../img/Portland/Home page D.png';
-import evelina from '../img/Evelina/home-page.png';
-import glowYoga from '../img/Glow_yoga/hero.png';
-import snov from '../img/Snov/hero.image.png';
+// import portland from '../img/Portland/Home page D.png';
+import evelina from '../img/Evelina/Evelina_main_pic.png';
+import glowYoga from '../img/Yoga/Main_pic.png';
+import snov from '../img/Snov/snov.png';
 
 import Reveal from './Reveal';
 
@@ -15,7 +15,7 @@ const projects = [
     name: 'FIN.do',
     description:
       'Improving the usability of Sing in flow for money transfer application.',
-    link: 'work/fin-do',
+    link: 'projects/fin-do',
     aligmentPosition: 'right',
     imgUrl: finDo,
     btnText: 'View project',
@@ -25,7 +25,7 @@ const projects = [
     projectId: '--snov',
     name: 'SNOV.io',
     description: 'Content and UX updates for the B2B platform.',
-    link: 'work/snov',
+    link: 'projects/snov',
     aligmentPosition: 'left',
     imgUrl: snov,
     btnText: 'View project',
@@ -36,7 +36,7 @@ const projects = [
     name: 'Glow Yoga',
     description:
       'Updating structure and responsive website design for the yoga studio.',
-    link: 'work/glow-yoga',
+    link: 'projects/glow-yoga',
     aligmentPosition: 'right',
     imgUrl: glowYoga,
     btnText: 'View project',
@@ -47,22 +47,22 @@ const projects = [
     name: 'Evelina',
     description:
       'Branding and accessibility improvement for the restaurant website.',
-    link: 'work/evelina',
+    link: 'projects/evelina',
     aligmentPosition: 'left',
     imgUrl: evelina,
     btnText: 'View project',
   },
-  {
-    id: 'portland-electric',
-    projectId: '--portland',
-    name: 'Portland Electric',
-    description:
-      'Responsive website design for a better user experience across devices.',
-    link: 'work/portland-electric',
-    aligmentPosition: 'right',
-    imgUrl: portland,
-    btnText: 'View project',
-  },
+  // {
+  //   id: 'portland-electric',
+  //   projectId: '--portland',
+  //   name: 'Portland Electric',
+  //   description:
+  //     'Responsive website design for a better user experience across devices.',
+  //   link: 'work/portland-electric',
+  //   aligmentPosition: 'right',
+  //   imgUrl: portland,
+  //   btnText: 'View project',
+  // },
 ];
 
 const renderProjects = () => {

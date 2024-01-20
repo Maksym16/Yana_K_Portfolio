@@ -47,8 +47,8 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             <Reveal animationType={'topToBot'} delay={0.3}>
               <li className="nav-item active">
-                <Link to="/work" className="nav-link active">
-                  Work
+                <Link to="/projects" className="nav-link active">
+                  Projects
                 </Link>
               </li>
             </Reveal>

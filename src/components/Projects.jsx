@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectSection from './ProjectSection';
 
 
-const Work = () => {
+const Projects = () => {
   return (
     <div>
       <ProjectSection />
@@ -10,4 +10,4 @@ const Work = () => {
   );
 }
 
-export default Work;
+export default Projects;
