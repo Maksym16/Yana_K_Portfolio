@@ -223,13 +223,7 @@ const GlowYoga = () => {
                     The existing Glow Yoga website contained information that
                     lacked coherence and organization. In the new design, I
                     prioritized the most crucial elements to ensure a clean and
-                    user-friendly navigation experience. Following the research
-                    findings, I strategized and structured the essential website
-                    content and functionality. The existing Glow Yoga website
-                    contained an abundance of information that lacked coherence
-                    and organization. In the new design, I prioritized the most
-                    crucial elements to ensure a clean and user-friendly
-                    navigation experience.
+                    user-friendly navigation experience.
                   </p>
                   <img className="cover-img" src={siteMapMin} alt="" />
                   <div className="text-center">
@@ -344,12 +338,12 @@ const GlowYoga = () => {
                   <div className="container__box__inner container__box__inner--3">
                     <img
                       className="cover-img cover-img--fin-do"
-                      src={review}
+                      src={checkout}
                       alt=""
                     />
                     <img
                       className="cover-img cover-img--fin-do"
-                      src={checkout}
+                      src={review}
                       alt=""
                     />
                     <img

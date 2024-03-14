@@ -34,7 +34,7 @@ const FinDo = () => {
                     </div>
 
                     <a
-                      href="https://www.figma.com/proto/pEhArGIM6tCcemhsD8MYY6/CAPSTONE?page-id=112%3A4299&node-id=170%3A8105&viewport=281%2C48%2C0.55&scaling=scale-down&starting-point-node-id=170%3A8105&fbclid=IwAR11ZIqqVNnWw6Z6ldAFLUHpMkEheNvnbVRjtsiF0uYHAX6lwf8WNOIVKjE"
+                      href="https://www.fin.do/"
                       type="button"
                       className="cta"
                       target="_blank"
